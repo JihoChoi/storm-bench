@@ -1,0 +1,624 @@
+2016-11-22 09:43:40.701 b.s.u.Utils [INFO] Using defaults.yaml from resources
+2016-11-22 09:43:40.750 b.s.u.Utils [INFO] Using storm.yaml from resources
+2016-11-22 09:43:51.715 o.a.s.s.o.a.z.ZooKeeper [INFO] Client environment:zookeeper.version=3.4.6-1569965, built on 02/20/2014 09:09 GMT
+2016-11-22 09:43:51.715 o.a.s.s.o.a.z.ZooKeeper [INFO] Client environment:host.name=192.168.1.3
+2016-11-22 09:43:51.716 o.a.s.s.o.a.z.ZooKeeper [INFO] Client environment:java.version=1.8.0_60
+2016-11-22 09:43:51.716 o.a.s.s.o.a.z.ZooKeeper [INFO] Client environment:java.vendor=Oracle Corporation
+2016-11-22 09:43:51.716 o.a.s.s.o.a.z.ZooKeeper [INFO] Client environment:java.home=/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre
+2016-11-22 09:43:51.716 o.a.s.s.o.a.z.ZooKeeper [INFO] Client environment:java.class.path=/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/asm-4.0.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/clojure-1.6.0.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/disruptor-2.10.4.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/hadoop-auth-2.4.0.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/kryo-2.21.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/log4j-api-2.1.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/log4j-core-2.1.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/log4j-over-slf4j-1.6.6.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/log4j-slf4j-impl-2.1.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/minlog-1.2.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/reflectasm-1.07-shaded.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/servlet-api-2.5.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/slf4j-api-1.7.7.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/storm-core-0.10.0.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/conf
+2016-11-22 09:43:51.716 o.a.s.s.o.a.z.ZooKeeper [INFO] Client environment:java.library.path=/usr/local/lib:/opt/local/lib:/usr/lib
+2016-11-22 09:43:51.716 o.a.s.s.o.a.z.ZooKeeper [INFO] Client environment:java.io.tmpdir=/var/folders/n2/0qh2lk9s3h1ft0qlqt07ddxc0000gn/T/
+2016-11-22 09:43:51.716 o.a.s.s.o.a.z.ZooKeeper [INFO] Client environment:java.compiler=<NA>
+2016-11-22 09:43:51.717 o.a.s.s.o.a.z.ZooKeeper [INFO] Client environment:os.name=Mac OS X
+2016-11-22 09:43:51.717 o.a.s.s.o.a.z.ZooKeeper [INFO] Client environment:os.arch=x86_64
+2016-11-22 09:43:51.717 o.a.s.s.o.a.z.ZooKeeper [INFO] Client environment:os.version=10.12.1
+2016-11-22 09:43:51.717 o.a.s.s.o.a.z.ZooKeeper [INFO] Client environment:user.name=Jiho
+2016-11-22 09:43:51.717 o.a.s.s.o.a.z.ZooKeeper [INFO] Client environment:user.home=/Users/Jiho
+2016-11-22 09:43:51.717 o.a.s.s.o.a.z.ZooKeeper [INFO] Client environment:user.dir=/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks
+2016-11-22 09:43:56.732 o.a.s.s.o.a.z.s.ZooKeeperServer [INFO] Server environment:zookeeper.version=3.4.6-1569965, built on 02/20/2014 09:09 GMT
+2016-11-22 09:43:56.732 o.a.s.s.o.a.z.s.ZooKeeperServer [INFO] Server environment:host.name=192.168.1.3
+2016-11-22 09:43:56.732 o.a.s.s.o.a.z.s.ZooKeeperServer [INFO] Server environment:java.version=1.8.0_60
+2016-11-22 09:43:56.732 o.a.s.s.o.a.z.s.ZooKeeperServer [INFO] Server environment:java.vendor=Oracle Corporation
+2016-11-22 09:43:56.733 o.a.s.s.o.a.z.s.ZooKeeperServer [INFO] Server environment:java.home=/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre
+2016-11-22 09:43:56.733 o.a.s.s.o.a.z.s.ZooKeeperServer [INFO] Server environment:java.class.path=/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/asm-4.0.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/clojure-1.6.0.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/disruptor-2.10.4.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/hadoop-auth-2.4.0.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/kryo-2.21.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/log4j-api-2.1.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/log4j-core-2.1.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/log4j-over-slf4j-1.6.6.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/log4j-slf4j-impl-2.1.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/minlog-1.2.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/reflectasm-1.07-shaded.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/servlet-api-2.5.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/slf4j-api-1.7.7.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/storm-core-0.10.0.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/conf
+2016-11-22 09:43:56.733 o.a.s.s.o.a.z.s.ZooKeeperServer [INFO] Server environment:java.library.path=/usr/local/lib:/opt/local/lib:/usr/lib
+2016-11-22 09:43:56.733 o.a.s.s.o.a.z.s.ZooKeeperServer [INFO] Server environment:java.io.tmpdir=/var/folders/n2/0qh2lk9s3h1ft0qlqt07ddxc0000gn/T/
+2016-11-22 09:43:56.733 o.a.s.s.o.a.z.s.ZooKeeperServer [INFO] Server environment:java.compiler=<NA>
+2016-11-22 09:43:56.733 o.a.s.s.o.a.z.s.ZooKeeperServer [INFO] Server environment:os.name=Mac OS X
+2016-11-22 09:43:56.733 o.a.s.s.o.a.z.s.ZooKeeperServer [INFO] Server environment:os.arch=x86_64
+2016-11-22 09:43:56.733 o.a.s.s.o.a.z.s.ZooKeeperServer [INFO] Server environment:os.version=10.12.1
+2016-11-22 09:43:56.734 o.a.s.s.o.a.z.s.ZooKeeperServer [INFO] Server environment:user.name=Jiho
+2016-11-22 09:43:56.734 o.a.s.s.o.a.z.s.ZooKeeperServer [INFO] Server environment:user.home=/Users/Jiho
+2016-11-22 09:43:56.734 o.a.s.s.o.a.z.s.ZooKeeperServer [INFO] Server environment:user.dir=/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks
+2016-11-22 09:43:56.880 b.s.u.Utils [INFO] Using defaults.yaml from resources
+2016-11-22 09:43:56.887 b.s.u.Utils [INFO] Using storm.yaml from resources
+2016-11-22 09:43:56.910 b.s.u.Utils [INFO] Using defaults.yaml from resources
+2016-11-22 09:43:56.916 b.s.u.Utils [INFO] Using storm.yaml from resources
+2016-11-22 09:44:06.971 o.a.s.s.o.e.j.s.Server [INFO] jetty-7.x.y-SNAPSHOT
+2016-11-22 09:44:06.991 o.a.s.s.o.e.j.s.h.ContextHandler [INFO] started o.a.s.s.o.e.j.s.ServletContextHandler{/,null}
+2016-11-22 09:44:07.015 o.a.s.s.o.e.j.s.AbstractConnector [INFO] Started SelectChannelConnector@0.0.0.0:8000
+2016-11-22 09:58:22.247 b.s.u.Utils [INFO] Using defaults.yaml from resources
+2016-11-22 09:58:22.302 b.s.u.Utils [INFO] Using storm.yaml from resources
+2016-11-22 09:58:33.318 o.a.s.s.o.a.z.ZooKeeper [INFO] Client environment:zookeeper.version=3.4.6-1569965, built on 02/20/2014 09:09 GMT
+2016-11-22 09:58:33.319 o.a.s.s.o.a.z.ZooKeeper [INFO] Client environment:host.name=192.168.1.3
+2016-11-22 09:58:33.319 o.a.s.s.o.a.z.ZooKeeper [INFO] Client environment:java.version=1.8.0_60
+2016-11-22 09:58:33.319 o.a.s.s.o.a.z.ZooKeeper [INFO] Client environment:java.vendor=Oracle Corporation
+2016-11-22 09:58:33.319 o.a.s.s.o.a.z.ZooKeeper [INFO] Client environment:java.home=/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre
+2016-11-22 09:58:33.320 o.a.s.s.o.a.z.ZooKeeper [INFO] Client environment:java.class.path=/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/asm-4.0.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/clojure-1.6.0.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/disruptor-2.10.4.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/hadoop-auth-2.4.0.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/kryo-2.21.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/log4j-api-2.1.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/log4j-core-2.1.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/log4j-over-slf4j-1.6.6.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/log4j-slf4j-impl-2.1.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/minlog-1.2.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/reflectasm-1.07-shaded.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/servlet-api-2.5.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/slf4j-api-1.7.7.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/storm-core-0.10.0.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/conf
+2016-11-22 09:58:33.320 o.a.s.s.o.a.z.ZooKeeper [INFO] Client environment:java.library.path=/usr/local/lib:/opt/local/lib:/usr/lib
+2016-11-22 09:58:33.320 o.a.s.s.o.a.z.ZooKeeper [INFO] Client environment:java.io.tmpdir=/var/folders/n2/0qh2lk9s3h1ft0qlqt07ddxc0000gn/T/
+2016-11-22 09:58:33.320 o.a.s.s.o.a.z.ZooKeeper [INFO] Client environment:java.compiler=<NA>
+2016-11-22 09:58:33.320 o.a.s.s.o.a.z.ZooKeeper [INFO] Client environment:os.name=Mac OS X
+2016-11-22 09:58:33.320 o.a.s.s.o.a.z.ZooKeeper [INFO] Client environment:os.arch=x86_64
+2016-11-22 09:58:33.320 o.a.s.s.o.a.z.ZooKeeper [INFO] Client environment:os.version=10.12.1
+2016-11-22 09:58:33.320 o.a.s.s.o.a.z.ZooKeeper [INFO] Client environment:user.name=Jiho
+2016-11-22 09:58:33.321 o.a.s.s.o.a.z.ZooKeeper [INFO] Client environment:user.home=/Users/Jiho
+2016-11-22 09:58:33.323 o.a.s.s.o.a.z.ZooKeeper [INFO] Client environment:user.dir=/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks
+2016-11-22 09:58:38.333 o.a.s.s.o.a.z.s.ZooKeeperServer [INFO] Server environment:zookeeper.version=3.4.6-1569965, built on 02/20/2014 09:09 GMT
+2016-11-22 09:58:38.333 o.a.s.s.o.a.z.s.ZooKeeperServer [INFO] Server environment:host.name=192.168.1.3
+2016-11-22 09:58:38.333 o.a.s.s.o.a.z.s.ZooKeeperServer [INFO] Server environment:java.version=1.8.0_60
+2016-11-22 09:58:38.333 o.a.s.s.o.a.z.s.ZooKeeperServer [INFO] Server environment:java.vendor=Oracle Corporation
+2016-11-22 09:58:38.333 o.a.s.s.o.a.z.s.ZooKeeperServer [INFO] Server environment:java.home=/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre
+2016-11-22 09:58:38.333 o.a.s.s.o.a.z.s.ZooKeeperServer [INFO] Server environment:java.class.path=/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/asm-4.0.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/clojure-1.6.0.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/disruptor-2.10.4.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/hadoop-auth-2.4.0.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/kryo-2.21.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/log4j-api-2.1.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/log4j-core-2.1.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/log4j-over-slf4j-1.6.6.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/log4j-slf4j-impl-2.1.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/minlog-1.2.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/reflectasm-1.07-shaded.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/servlet-api-2.5.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/slf4j-api-1.7.7.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/storm-core-0.10.0.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/conf
+2016-11-22 09:58:38.334 o.a.s.s.o.a.z.s.ZooKeeperServer [INFO] Server environment:java.library.path=/usr/local/lib:/opt/local/lib:/usr/lib
+2016-11-22 09:58:38.334 o.a.s.s.o.a.z.s.ZooKeeperServer [INFO] Server environment:java.io.tmpdir=/var/folders/n2/0qh2lk9s3h1ft0qlqt07ddxc0000gn/T/
+2016-11-22 09:58:38.334 o.a.s.s.o.a.z.s.ZooKeeperServer [INFO] Server environment:java.compiler=<NA>
+2016-11-22 09:58:38.334 o.a.s.s.o.a.z.s.ZooKeeperServer [INFO] Server environment:os.name=Mac OS X
+2016-11-22 09:58:38.334 o.a.s.s.o.a.z.s.ZooKeeperServer [INFO] Server environment:os.arch=x86_64
+2016-11-22 09:58:38.334 o.a.s.s.o.a.z.s.ZooKeeperServer [INFO] Server environment:os.version=10.12.1
+2016-11-22 09:58:38.334 o.a.s.s.o.a.z.s.ZooKeeperServer [INFO] Server environment:user.name=Jiho
+2016-11-22 09:58:38.334 o.a.s.s.o.a.z.s.ZooKeeperServer [INFO] Server environment:user.home=/Users/Jiho
+2016-11-22 09:58:38.335 o.a.s.s.o.a.z.s.ZooKeeperServer [INFO] Server environment:user.dir=/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks
+2016-11-22 09:58:38.484 b.s.u.Utils [INFO] Using defaults.yaml from resources
+2016-11-22 09:58:38.492 b.s.u.Utils [INFO] Using storm.yaml from resources
+2016-11-22 09:58:38.514 b.s.u.Utils [INFO] Using defaults.yaml from resources
+2016-11-22 09:58:38.520 b.s.u.Utils [INFO] Using storm.yaml from resources
+2016-11-22 09:58:48.587 o.a.s.s.o.e.j.s.Server [INFO] jetty-7.x.y-SNAPSHOT
+2016-11-22 09:58:48.617 o.a.s.s.o.e.j.s.h.ContextHandler [INFO] started o.a.s.s.o.e.j.s.ServletContextHandler{/,null}
+2016-11-22 09:58:48.650 o.a.s.s.o.e.j.s.AbstractConnector [INFO] Started SelectChannelConnector@0.0.0.0:8000
+2016-11-22 10:49:46.005 b.s.u.Utils [INFO] Using defaults.yaml from resources
+2016-11-22 10:49:46.057 b.s.u.Utils [INFO] Using storm.yaml from resources
+2016-11-22 10:49:57.016 o.a.s.s.o.a.z.ZooKeeper [INFO] Client environment:zookeeper.version=3.4.6-1569965, built on 02/20/2014 09:09 GMT
+2016-11-22 10:49:57.016 o.a.s.s.o.a.z.ZooKeeper [INFO] Client environment:host.name=192.168.1.3
+2016-11-22 10:49:57.017 o.a.s.s.o.a.z.ZooKeeper [INFO] Client environment:java.version=1.8.0_60
+2016-11-22 10:49:57.017 o.a.s.s.o.a.z.ZooKeeper [INFO] Client environment:java.vendor=Oracle Corporation
+2016-11-22 10:49:57.017 o.a.s.s.o.a.z.ZooKeeper [INFO] Client environment:java.home=/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre
+2016-11-22 10:49:57.017 o.a.s.s.o.a.z.ZooKeeper [INFO] Client environment:java.class.path=/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/asm-4.0.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/clojure-1.6.0.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/disruptor-2.10.4.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/hadoop-auth-2.4.0.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/kryo-2.21.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/log4j-api-2.1.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/log4j-core-2.1.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/log4j-over-slf4j-1.6.6.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/log4j-slf4j-impl-2.1.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/minlog-1.2.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/reflectasm-1.07-shaded.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/servlet-api-2.5.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/slf4j-api-1.7.7.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/storm-core-0.10.0.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/conf
+2016-11-22 10:49:57.017 o.a.s.s.o.a.z.ZooKeeper [INFO] Client environment:java.library.path=/usr/local/lib:/opt/local/lib:/usr/lib
+2016-11-22 10:49:57.017 o.a.s.s.o.a.z.ZooKeeper [INFO] Client environment:java.io.tmpdir=/var/folders/n2/0qh2lk9s3h1ft0qlqt07ddxc0000gn/T/
+2016-11-22 10:49:57.017 o.a.s.s.o.a.z.ZooKeeper [INFO] Client environment:java.compiler=<NA>
+2016-11-22 10:49:57.017 o.a.s.s.o.a.z.ZooKeeper [INFO] Client environment:os.name=Mac OS X
+2016-11-22 10:49:57.018 o.a.s.s.o.a.z.ZooKeeper [INFO] Client environment:os.arch=x86_64
+2016-11-22 10:49:57.018 o.a.s.s.o.a.z.ZooKeeper [INFO] Client environment:os.version=10.12.1
+2016-11-22 10:49:57.018 o.a.s.s.o.a.z.ZooKeeper [INFO] Client environment:user.name=Jiho
+2016-11-22 10:49:57.018 o.a.s.s.o.a.z.ZooKeeper [INFO] Client environment:user.home=/Users/Jiho
+2016-11-22 10:49:57.018 o.a.s.s.o.a.z.ZooKeeper [INFO] Client environment:user.dir=/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks
+2016-11-22 10:50:02.029 o.a.s.s.o.a.z.s.ZooKeeperServer [INFO] Server environment:zookeeper.version=3.4.6-1569965, built on 02/20/2014 09:09 GMT
+2016-11-22 10:50:02.029 o.a.s.s.o.a.z.s.ZooKeeperServer [INFO] Server environment:host.name=192.168.1.3
+2016-11-22 10:50:02.029 o.a.s.s.o.a.z.s.ZooKeeperServer [INFO] Server environment:java.version=1.8.0_60
+2016-11-22 10:50:02.030 o.a.s.s.o.a.z.s.ZooKeeperServer [INFO] Server environment:java.vendor=Oracle Corporation
+2016-11-22 10:50:02.030 o.a.s.s.o.a.z.s.ZooKeeperServer [INFO] Server environment:java.home=/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre
+2016-11-22 10:50:02.030 o.a.s.s.o.a.z.s.ZooKeeperServer [INFO] Server environment:java.class.path=/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/asm-4.0.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/clojure-1.6.0.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/disruptor-2.10.4.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/hadoop-auth-2.4.0.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/kryo-2.21.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/log4j-api-2.1.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/log4j-core-2.1.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/log4j-over-slf4j-1.6.6.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/log4j-slf4j-impl-2.1.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/minlog-1.2.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/reflectasm-1.07-shaded.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/servlet-api-2.5.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/slf4j-api-1.7.7.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/storm-core-0.10.0.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/conf
+2016-11-22 10:50:02.030 o.a.s.s.o.a.z.s.ZooKeeperServer [INFO] Server environment:java.library.path=/usr/local/lib:/opt/local/lib:/usr/lib
+2016-11-22 10:50:02.030 o.a.s.s.o.a.z.s.ZooKeeperServer [INFO] Server environment:java.io.tmpdir=/var/folders/n2/0qh2lk9s3h1ft0qlqt07ddxc0000gn/T/
+2016-11-22 10:50:02.030 o.a.s.s.o.a.z.s.ZooKeeperServer [INFO] Server environment:java.compiler=<NA>
+2016-11-22 10:50:02.030 o.a.s.s.o.a.z.s.ZooKeeperServer [INFO] Server environment:os.name=Mac OS X
+2016-11-22 10:50:02.030 o.a.s.s.o.a.z.s.ZooKeeperServer [INFO] Server environment:os.arch=x86_64
+2016-11-22 10:50:02.031 o.a.s.s.o.a.z.s.ZooKeeperServer [INFO] Server environment:os.version=10.12.1
+2016-11-22 10:50:02.031 o.a.s.s.o.a.z.s.ZooKeeperServer [INFO] Server environment:user.name=Jiho
+2016-11-22 10:50:02.031 o.a.s.s.o.a.z.s.ZooKeeperServer [INFO] Server environment:user.home=/Users/Jiho
+2016-11-22 10:50:02.031 o.a.s.s.o.a.z.s.ZooKeeperServer [INFO] Server environment:user.dir=/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks
+2016-11-22 10:50:02.176 b.s.u.Utils [INFO] Using defaults.yaml from resources
+2016-11-22 10:50:02.184 b.s.u.Utils [INFO] Using storm.yaml from resources
+2016-11-22 10:50:02.207 b.s.u.Utils [INFO] Using defaults.yaml from resources
+2016-11-22 10:50:02.212 b.s.u.Utils [INFO] Using storm.yaml from resources
+2016-11-22 10:50:12.280 o.a.s.s.o.e.j.s.Server [INFO] jetty-7.x.y-SNAPSHOT
+2016-11-22 10:50:12.311 o.a.s.s.o.e.j.s.h.ContextHandler [INFO] started o.a.s.s.o.e.j.s.ServletContextHandler{/,null}
+2016-11-22 10:50:12.345 o.a.s.s.o.e.j.s.AbstractConnector [INFO] Started SelectChannelConnector@0.0.0.0:8000
+2016-11-22 11:13:20.363 b.s.u.Utils [INFO] Using defaults.yaml from resources
+2016-11-22 11:13:20.412 b.s.u.Utils [INFO] Using storm.yaml from resources
+2016-11-22 11:13:31.371 o.a.s.s.o.a.z.ZooKeeper [INFO] Client environment:zookeeper.version=3.4.6-1569965, built on 02/20/2014 09:09 GMT
+2016-11-22 11:13:31.372 o.a.s.s.o.a.z.ZooKeeper [INFO] Client environment:host.name=192.168.1.3
+2016-11-22 11:13:31.372 o.a.s.s.o.a.z.ZooKeeper [INFO] Client environment:java.version=1.8.0_60
+2016-11-22 11:13:31.372 o.a.s.s.o.a.z.ZooKeeper [INFO] Client environment:java.vendor=Oracle Corporation
+2016-11-22 11:13:31.372 o.a.s.s.o.a.z.ZooKeeper [INFO] Client environment:java.home=/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre
+2016-11-22 11:13:31.372 o.a.s.s.o.a.z.ZooKeeper [INFO] Client environment:java.class.path=/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/asm-4.0.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/clojure-1.6.0.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/disruptor-2.10.4.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/hadoop-auth-2.4.0.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/kryo-2.21.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/log4j-api-2.1.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/log4j-core-2.1.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/log4j-over-slf4j-1.6.6.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/log4j-slf4j-impl-2.1.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/minlog-1.2.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/reflectasm-1.07-shaded.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/servlet-api-2.5.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/slf4j-api-1.7.7.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/storm-core-0.10.0.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/conf
+2016-11-22 11:13:31.374 o.a.s.s.o.a.z.ZooKeeper [INFO] Client environment:java.library.path=/usr/local/lib:/opt/local/lib:/usr/lib
+2016-11-22 11:13:31.374 o.a.s.s.o.a.z.ZooKeeper [INFO] Client environment:java.io.tmpdir=/var/folders/n2/0qh2lk9s3h1ft0qlqt07ddxc0000gn/T/
+2016-11-22 11:13:31.374 o.a.s.s.o.a.z.ZooKeeper [INFO] Client environment:java.compiler=<NA>
+2016-11-22 11:13:31.374 o.a.s.s.o.a.z.ZooKeeper [INFO] Client environment:os.name=Mac OS X
+2016-11-22 11:13:31.374 o.a.s.s.o.a.z.ZooKeeper [INFO] Client environment:os.arch=x86_64
+2016-11-22 11:13:31.374 o.a.s.s.o.a.z.ZooKeeper [INFO] Client environment:os.version=10.12.1
+2016-11-22 11:13:31.374 o.a.s.s.o.a.z.ZooKeeper [INFO] Client environment:user.name=Jiho
+2016-11-22 11:13:31.374 o.a.s.s.o.a.z.ZooKeeper [INFO] Client environment:user.home=/Users/Jiho
+2016-11-22 11:13:31.374 o.a.s.s.o.a.z.ZooKeeper [INFO] Client environment:user.dir=/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks
+2016-11-22 11:13:36.386 o.a.s.s.o.a.z.s.ZooKeeperServer [INFO] Server environment:zookeeper.version=3.4.6-1569965, built on 02/20/2014 09:09 GMT
+2016-11-22 11:13:36.387 o.a.s.s.o.a.z.s.ZooKeeperServer [INFO] Server environment:host.name=192.168.1.3
+2016-11-22 11:13:36.387 o.a.s.s.o.a.z.s.ZooKeeperServer [INFO] Server environment:java.version=1.8.0_60
+2016-11-22 11:13:36.387 o.a.s.s.o.a.z.s.ZooKeeperServer [INFO] Server environment:java.vendor=Oracle Corporation
+2016-11-22 11:13:36.387 o.a.s.s.o.a.z.s.ZooKeeperServer [INFO] Server environment:java.home=/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre
+2016-11-22 11:13:36.387 o.a.s.s.o.a.z.s.ZooKeeperServer [INFO] Server environment:java.class.path=/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/asm-4.0.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/clojure-1.6.0.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/disruptor-2.10.4.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/hadoop-auth-2.4.0.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/kryo-2.21.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/log4j-api-2.1.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/log4j-core-2.1.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/log4j-over-slf4j-1.6.6.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/log4j-slf4j-impl-2.1.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/minlog-1.2.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/reflectasm-1.07-shaded.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/servlet-api-2.5.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/slf4j-api-1.7.7.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/storm-core-0.10.0.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/conf
+2016-11-22 11:13:36.387 o.a.s.s.o.a.z.s.ZooKeeperServer [INFO] Server environment:java.library.path=/usr/local/lib:/opt/local/lib:/usr/lib
+2016-11-22 11:13:36.388 o.a.s.s.o.a.z.s.ZooKeeperServer [INFO] Server environment:java.io.tmpdir=/var/folders/n2/0qh2lk9s3h1ft0qlqt07ddxc0000gn/T/
+2016-11-22 11:13:36.388 o.a.s.s.o.a.z.s.ZooKeeperServer [INFO] Server environment:java.compiler=<NA>
+2016-11-22 11:13:36.388 o.a.s.s.o.a.z.s.ZooKeeperServer [INFO] Server environment:os.name=Mac OS X
+2016-11-22 11:13:36.388 o.a.s.s.o.a.z.s.ZooKeeperServer [INFO] Server environment:os.arch=x86_64
+2016-11-22 11:13:36.388 o.a.s.s.o.a.z.s.ZooKeeperServer [INFO] Server environment:os.version=10.12.1
+2016-11-22 11:13:36.388 o.a.s.s.o.a.z.s.ZooKeeperServer [INFO] Server environment:user.name=Jiho
+2016-11-22 11:13:36.388 o.a.s.s.o.a.z.s.ZooKeeperServer [INFO] Server environment:user.home=/Users/Jiho
+2016-11-22 11:13:36.389 o.a.s.s.o.a.z.s.ZooKeeperServer [INFO] Server environment:user.dir=/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks
+2016-11-22 11:13:36.535 b.s.u.Utils [INFO] Using defaults.yaml from resources
+2016-11-22 11:13:36.543 b.s.u.Utils [INFO] Using storm.yaml from resources
+2016-11-22 11:13:36.565 b.s.u.Utils [INFO] Using defaults.yaml from resources
+2016-11-22 11:13:36.571 b.s.u.Utils [INFO] Using storm.yaml from resources
+2016-11-22 11:13:46.637 o.a.s.s.o.e.j.s.Server [INFO] jetty-7.x.y-SNAPSHOT
+2016-11-22 11:13:46.666 o.a.s.s.o.e.j.s.h.ContextHandler [INFO] started o.a.s.s.o.e.j.s.ServletContextHandler{/,null}
+2016-11-22 11:13:46.699 o.a.s.s.o.e.j.s.AbstractConnector [INFO] Started SelectChannelConnector@0.0.0.0:8000
+2016-11-22 11:25:42.999 b.s.u.Utils [INFO] Using defaults.yaml from resources
+2016-11-22 11:25:43.048 b.s.u.Utils [INFO] Using storm.yaml from resources
+2016-11-22 11:25:54.013 o.a.s.s.o.a.z.ZooKeeper [INFO] Client environment:zookeeper.version=3.4.6-1569965, built on 02/20/2014 09:09 GMT
+2016-11-22 11:25:54.013 o.a.s.s.o.a.z.ZooKeeper [INFO] Client environment:host.name=192.168.1.3
+2016-11-22 11:25:54.014 o.a.s.s.o.a.z.ZooKeeper [INFO] Client environment:java.version=1.8.0_60
+2016-11-22 11:25:54.014 o.a.s.s.o.a.z.ZooKeeper [INFO] Client environment:java.vendor=Oracle Corporation
+2016-11-22 11:25:54.014 o.a.s.s.o.a.z.ZooKeeper [INFO] Client environment:java.home=/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre
+2016-11-22 11:25:54.014 o.a.s.s.o.a.z.ZooKeeper [INFO] Client environment:java.class.path=/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/asm-4.0.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/clojure-1.6.0.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/disruptor-2.10.4.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/hadoop-auth-2.4.0.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/kryo-2.21.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/log4j-api-2.1.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/log4j-core-2.1.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/log4j-over-slf4j-1.6.6.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/log4j-slf4j-impl-2.1.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/minlog-1.2.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/reflectasm-1.07-shaded.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/servlet-api-2.5.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/slf4j-api-1.7.7.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/storm-core-0.10.0.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/conf
+2016-11-22 11:25:54.014 o.a.s.s.o.a.z.ZooKeeper [INFO] Client environment:java.library.path=/usr/local/lib:/opt/local/lib:/usr/lib
+2016-11-22 11:25:54.014 o.a.s.s.o.a.z.ZooKeeper [INFO] Client environment:java.io.tmpdir=/var/folders/n2/0qh2lk9s3h1ft0qlqt07ddxc0000gn/T/
+2016-11-22 11:25:54.015 o.a.s.s.o.a.z.ZooKeeper [INFO] Client environment:java.compiler=<NA>
+2016-11-22 11:25:54.015 o.a.s.s.o.a.z.ZooKeeper [INFO] Client environment:os.name=Mac OS X
+2016-11-22 11:25:54.015 o.a.s.s.o.a.z.ZooKeeper [INFO] Client environment:os.arch=x86_64
+2016-11-22 11:25:54.015 o.a.s.s.o.a.z.ZooKeeper [INFO] Client environment:os.version=10.12.1
+2016-11-22 11:25:54.015 o.a.s.s.o.a.z.ZooKeeper [INFO] Client environment:user.name=Jiho
+2016-11-22 11:25:54.015 o.a.s.s.o.a.z.ZooKeeper [INFO] Client environment:user.home=/Users/Jiho
+2016-11-22 11:25:54.015 o.a.s.s.o.a.z.ZooKeeper [INFO] Client environment:user.dir=/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks
+2016-11-22 11:25:59.030 o.a.s.s.o.a.z.s.ZooKeeperServer [INFO] Server environment:zookeeper.version=3.4.6-1569965, built on 02/20/2014 09:09 GMT
+2016-11-22 11:25:59.030 o.a.s.s.o.a.z.s.ZooKeeperServer [INFO] Server environment:host.name=192.168.1.3
+2016-11-22 11:25:59.030 o.a.s.s.o.a.z.s.ZooKeeperServer [INFO] Server environment:java.version=1.8.0_60
+2016-11-22 11:25:59.030 o.a.s.s.o.a.z.s.ZooKeeperServer [INFO] Server environment:java.vendor=Oracle Corporation
+2016-11-22 11:25:59.030 o.a.s.s.o.a.z.s.ZooKeeperServer [INFO] Server environment:java.home=/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre
+2016-11-22 11:25:59.030 o.a.s.s.o.a.z.s.ZooKeeperServer [INFO] Server environment:java.class.path=/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/asm-4.0.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/clojure-1.6.0.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/disruptor-2.10.4.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/hadoop-auth-2.4.0.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/kryo-2.21.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/log4j-api-2.1.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/log4j-core-2.1.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/log4j-over-slf4j-1.6.6.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/log4j-slf4j-impl-2.1.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/minlog-1.2.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/reflectasm-1.07-shaded.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/servlet-api-2.5.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/slf4j-api-1.7.7.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/storm-core-0.10.0.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/conf
+2016-11-22 11:25:59.030 o.a.s.s.o.a.z.s.ZooKeeperServer [INFO] Server environment:java.library.path=/usr/local/lib:/opt/local/lib:/usr/lib
+2016-11-22 11:25:59.031 o.a.s.s.o.a.z.s.ZooKeeperServer [INFO] Server environment:java.io.tmpdir=/var/folders/n2/0qh2lk9s3h1ft0qlqt07ddxc0000gn/T/
+2016-11-22 11:25:59.031 o.a.s.s.o.a.z.s.ZooKeeperServer [INFO] Server environment:java.compiler=<NA>
+2016-11-22 11:25:59.031 o.a.s.s.o.a.z.s.ZooKeeperServer [INFO] Server environment:os.name=Mac OS X
+2016-11-22 11:25:59.031 o.a.s.s.o.a.z.s.ZooKeeperServer [INFO] Server environment:os.arch=x86_64
+2016-11-22 11:25:59.031 o.a.s.s.o.a.z.s.ZooKeeperServer [INFO] Server environment:os.version=10.12.1
+2016-11-22 11:25:59.031 o.a.s.s.o.a.z.s.ZooKeeperServer [INFO] Server environment:user.name=Jiho
+2016-11-22 11:25:59.031 o.a.s.s.o.a.z.s.ZooKeeperServer [INFO] Server environment:user.home=/Users/Jiho
+2016-11-22 11:25:59.031 o.a.s.s.o.a.z.s.ZooKeeperServer [INFO] Server environment:user.dir=/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks
+2016-11-22 11:25:59.190 b.s.u.Utils [INFO] Using defaults.yaml from resources
+2016-11-22 11:25:59.198 b.s.u.Utils [INFO] Using storm.yaml from resources
+2016-11-22 11:25:59.225 b.s.u.Utils [INFO] Using defaults.yaml from resources
+2016-11-22 11:25:59.231 b.s.u.Utils [INFO] Using storm.yaml from resources
+2016-11-22 11:26:09.320 o.a.s.s.o.e.j.s.Server [INFO] jetty-7.x.y-SNAPSHOT
+2016-11-22 11:26:09.347 o.a.s.s.o.e.j.s.h.ContextHandler [INFO] started o.a.s.s.o.e.j.s.ServletContextHandler{/,null}
+2016-11-22 11:26:09.393 o.a.s.s.o.e.j.s.AbstractConnector [INFO] Started SelectChannelConnector@0.0.0.0:8000
+2016-11-22 11:35:29.715 b.s.u.Utils [INFO] Using defaults.yaml from resources
+2016-11-22 11:35:29.764 b.s.u.Utils [INFO] Using storm.yaml from resources
+2016-11-22 11:35:40.726 o.a.s.s.o.a.z.ZooKeeper [INFO] Client environment:zookeeper.version=3.4.6-1569965, built on 02/20/2014 09:09 GMT
+2016-11-22 11:35:40.726 o.a.s.s.o.a.z.ZooKeeper [INFO] Client environment:host.name=192.168.1.3
+2016-11-22 11:35:40.726 o.a.s.s.o.a.z.ZooKeeper [INFO] Client environment:java.version=1.8.0_60
+2016-11-22 11:35:40.726 o.a.s.s.o.a.z.ZooKeeper [INFO] Client environment:java.vendor=Oracle Corporation
+2016-11-22 11:35:40.727 o.a.s.s.o.a.z.ZooKeeper [INFO] Client environment:java.home=/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre
+2016-11-22 11:35:40.727 o.a.s.s.o.a.z.ZooKeeper [INFO] Client environment:java.class.path=/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/asm-4.0.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/clojure-1.6.0.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/disruptor-2.10.4.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/hadoop-auth-2.4.0.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/kryo-2.21.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/log4j-api-2.1.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/log4j-core-2.1.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/log4j-over-slf4j-1.6.6.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/log4j-slf4j-impl-2.1.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/minlog-1.2.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/reflectasm-1.07-shaded.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/servlet-api-2.5.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/slf4j-api-1.7.7.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/storm-core-0.10.0.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/conf
+2016-11-22 11:35:40.727 o.a.s.s.o.a.z.ZooKeeper [INFO] Client environment:java.library.path=/usr/local/lib:/opt/local/lib:/usr/lib
+2016-11-22 11:35:40.727 o.a.s.s.o.a.z.ZooKeeper [INFO] Client environment:java.io.tmpdir=/var/folders/n2/0qh2lk9s3h1ft0qlqt07ddxc0000gn/T/
+2016-11-22 11:35:40.727 o.a.s.s.o.a.z.ZooKeeper [INFO] Client environment:java.compiler=<NA>
+2016-11-22 11:35:40.727 o.a.s.s.o.a.z.ZooKeeper [INFO] Client environment:os.name=Mac OS X
+2016-11-22 11:35:40.728 o.a.s.s.o.a.z.ZooKeeper [INFO] Client environment:os.arch=x86_64
+2016-11-22 11:35:40.728 o.a.s.s.o.a.z.ZooKeeper [INFO] Client environment:os.version=10.12.1
+2016-11-22 11:35:40.728 o.a.s.s.o.a.z.ZooKeeper [INFO] Client environment:user.name=Jiho
+2016-11-22 11:35:40.728 o.a.s.s.o.a.z.ZooKeeper [INFO] Client environment:user.home=/Users/Jiho
+2016-11-22 11:35:40.728 o.a.s.s.o.a.z.ZooKeeper [INFO] Client environment:user.dir=/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks
+2016-11-22 11:35:45.742 o.a.s.s.o.a.z.s.ZooKeeperServer [INFO] Server environment:zookeeper.version=3.4.6-1569965, built on 02/20/2014 09:09 GMT
+2016-11-22 11:35:45.742 o.a.s.s.o.a.z.s.ZooKeeperServer [INFO] Server environment:host.name=192.168.1.3
+2016-11-22 11:35:45.742 o.a.s.s.o.a.z.s.ZooKeeperServer [INFO] Server environment:java.version=1.8.0_60
+2016-11-22 11:35:45.742 o.a.s.s.o.a.z.s.ZooKeeperServer [INFO] Server environment:java.vendor=Oracle Corporation
+2016-11-22 11:35:45.742 o.a.s.s.o.a.z.s.ZooKeeperServer [INFO] Server environment:java.home=/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre
+2016-11-22 11:35:45.742 o.a.s.s.o.a.z.s.ZooKeeperServer [INFO] Server environment:java.class.path=/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/asm-4.0.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/clojure-1.6.0.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/disruptor-2.10.4.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/hadoop-auth-2.4.0.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/kryo-2.21.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/log4j-api-2.1.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/log4j-core-2.1.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/log4j-over-slf4j-1.6.6.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/log4j-slf4j-impl-2.1.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/minlog-1.2.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/reflectasm-1.07-shaded.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/servlet-api-2.5.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/slf4j-api-1.7.7.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/storm-core-0.10.0.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/conf
+2016-11-22 11:35:45.743 o.a.s.s.o.a.z.s.ZooKeeperServer [INFO] Server environment:java.library.path=/usr/local/lib:/opt/local/lib:/usr/lib
+2016-11-22 11:35:45.743 o.a.s.s.o.a.z.s.ZooKeeperServer [INFO] Server environment:java.io.tmpdir=/var/folders/n2/0qh2lk9s3h1ft0qlqt07ddxc0000gn/T/
+2016-11-22 11:35:45.743 o.a.s.s.o.a.z.s.ZooKeeperServer [INFO] Server environment:java.compiler=<NA>
+2016-11-22 11:35:45.743 o.a.s.s.o.a.z.s.ZooKeeperServer [INFO] Server environment:os.name=Mac OS X
+2016-11-22 11:35:45.743 o.a.s.s.o.a.z.s.ZooKeeperServer [INFO] Server environment:os.arch=x86_64
+2016-11-22 11:35:45.743 o.a.s.s.o.a.z.s.ZooKeeperServer [INFO] Server environment:os.version=10.12.1
+2016-11-22 11:35:45.743 o.a.s.s.o.a.z.s.ZooKeeperServer [INFO] Server environment:user.name=Jiho
+2016-11-22 11:35:45.743 o.a.s.s.o.a.z.s.ZooKeeperServer [INFO] Server environment:user.home=/Users/Jiho
+2016-11-22 11:35:45.744 o.a.s.s.o.a.z.s.ZooKeeperServer [INFO] Server environment:user.dir=/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks
+2016-11-22 11:35:45.890 b.s.u.Utils [INFO] Using defaults.yaml from resources
+2016-11-22 11:35:45.897 b.s.u.Utils [INFO] Using storm.yaml from resources
+2016-11-22 11:35:45.919 b.s.u.Utils [INFO] Using defaults.yaml from resources
+2016-11-22 11:35:45.924 b.s.u.Utils [INFO] Using storm.yaml from resources
+2016-11-22 11:35:55.995 o.a.s.s.o.e.j.s.Server [INFO] jetty-7.x.y-SNAPSHOT
+2016-11-22 11:35:56.025 o.a.s.s.o.e.j.s.h.ContextHandler [INFO] started o.a.s.s.o.e.j.s.ServletContextHandler{/,null}
+2016-11-22 11:35:56.054 o.a.s.s.o.e.j.s.AbstractConnector [INFO] Started SelectChannelConnector@0.0.0.0:8000
+2016-11-22 11:42:37.262 b.s.u.Utils [INFO] Using defaults.yaml from resources
+2016-11-22 11:42:37.312 b.s.u.Utils [INFO] Using storm.yaml from resources
+2016-11-22 11:42:48.268 o.a.s.s.o.a.z.ZooKeeper [INFO] Client environment:zookeeper.version=3.4.6-1569965, built on 02/20/2014 09:09 GMT
+2016-11-22 11:42:48.268 o.a.s.s.o.a.z.ZooKeeper [INFO] Client environment:host.name=192.168.1.3
+2016-11-22 11:42:48.268 o.a.s.s.o.a.z.ZooKeeper [INFO] Client environment:java.version=1.8.0_60
+2016-11-22 11:42:48.268 o.a.s.s.o.a.z.ZooKeeper [INFO] Client environment:java.vendor=Oracle Corporation
+2016-11-22 11:42:48.269 o.a.s.s.o.a.z.ZooKeeper [INFO] Client environment:java.home=/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre
+2016-11-22 11:42:48.269 o.a.s.s.o.a.z.ZooKeeper [INFO] Client environment:java.class.path=/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/asm-4.0.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/clojure-1.6.0.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/disruptor-2.10.4.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/hadoop-auth-2.4.0.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/kryo-2.21.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/log4j-api-2.1.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/log4j-core-2.1.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/log4j-over-slf4j-1.6.6.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/log4j-slf4j-impl-2.1.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/minlog-1.2.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/reflectasm-1.07-shaded.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/servlet-api-2.5.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/slf4j-api-1.7.7.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/storm-core-0.10.0.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/conf
+2016-11-22 11:42:48.269 o.a.s.s.o.a.z.ZooKeeper [INFO] Client environment:java.library.path=/usr/local/lib:/opt/local/lib:/usr/lib
+2016-11-22 11:42:48.269 o.a.s.s.o.a.z.ZooKeeper [INFO] Client environment:java.io.tmpdir=/var/folders/n2/0qh2lk9s3h1ft0qlqt07ddxc0000gn/T/
+2016-11-22 11:42:48.269 o.a.s.s.o.a.z.ZooKeeper [INFO] Client environment:java.compiler=<NA>
+2016-11-22 11:42:48.269 o.a.s.s.o.a.z.ZooKeeper [INFO] Client environment:os.name=Mac OS X
+2016-11-22 11:42:48.269 o.a.s.s.o.a.z.ZooKeeper [INFO] Client environment:os.arch=x86_64
+2016-11-22 11:42:48.269 o.a.s.s.o.a.z.ZooKeeper [INFO] Client environment:os.version=10.12.1
+2016-11-22 11:42:48.269 o.a.s.s.o.a.z.ZooKeeper [INFO] Client environment:user.name=Jiho
+2016-11-22 11:42:48.270 o.a.s.s.o.a.z.ZooKeeper [INFO] Client environment:user.home=/Users/Jiho
+2016-11-22 11:42:48.270 o.a.s.s.o.a.z.ZooKeeper [INFO] Client environment:user.dir=/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks
+2016-11-22 11:42:53.280 o.a.s.s.o.a.z.s.ZooKeeperServer [INFO] Server environment:zookeeper.version=3.4.6-1569965, built on 02/20/2014 09:09 GMT
+2016-11-22 11:42:53.280 o.a.s.s.o.a.z.s.ZooKeeperServer [INFO] Server environment:host.name=192.168.1.3
+2016-11-22 11:42:53.280 o.a.s.s.o.a.z.s.ZooKeeperServer [INFO] Server environment:java.version=1.8.0_60
+2016-11-22 11:42:53.280 o.a.s.s.o.a.z.s.ZooKeeperServer [INFO] Server environment:java.vendor=Oracle Corporation
+2016-11-22 11:42:53.280 o.a.s.s.o.a.z.s.ZooKeeperServer [INFO] Server environment:java.home=/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre
+2016-11-22 11:42:53.281 o.a.s.s.o.a.z.s.ZooKeeperServer [INFO] Server environment:java.class.path=/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/asm-4.0.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/clojure-1.6.0.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/disruptor-2.10.4.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/hadoop-auth-2.4.0.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/kryo-2.21.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/log4j-api-2.1.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/log4j-core-2.1.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/log4j-over-slf4j-1.6.6.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/log4j-slf4j-impl-2.1.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/minlog-1.2.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/reflectasm-1.07-shaded.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/servlet-api-2.5.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/slf4j-api-1.7.7.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/storm-core-0.10.0.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/conf
+2016-11-22 11:42:53.281 o.a.s.s.o.a.z.s.ZooKeeperServer [INFO] Server environment:java.library.path=/usr/local/lib:/opt/local/lib:/usr/lib
+2016-11-22 11:42:53.281 o.a.s.s.o.a.z.s.ZooKeeperServer [INFO] Server environment:java.io.tmpdir=/var/folders/n2/0qh2lk9s3h1ft0qlqt07ddxc0000gn/T/
+2016-11-22 11:42:53.281 o.a.s.s.o.a.z.s.ZooKeeperServer [INFO] Server environment:java.compiler=<NA>
+2016-11-22 11:42:53.281 o.a.s.s.o.a.z.s.ZooKeeperServer [INFO] Server environment:os.name=Mac OS X
+2016-11-22 11:42:53.281 o.a.s.s.o.a.z.s.ZooKeeperServer [INFO] Server environment:os.arch=x86_64
+2016-11-22 11:42:53.281 o.a.s.s.o.a.z.s.ZooKeeperServer [INFO] Server environment:os.version=10.12.1
+2016-11-22 11:42:53.281 o.a.s.s.o.a.z.s.ZooKeeperServer [INFO] Server environment:user.name=Jiho
+2016-11-22 11:42:53.281 o.a.s.s.o.a.z.s.ZooKeeperServer [INFO] Server environment:user.home=/Users/Jiho
+2016-11-22 11:42:53.281 o.a.s.s.o.a.z.s.ZooKeeperServer [INFO] Server environment:user.dir=/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks
+2016-11-22 11:42:53.436 b.s.u.Utils [INFO] Using defaults.yaml from resources
+2016-11-22 11:42:53.444 b.s.u.Utils [INFO] Using storm.yaml from resources
+2016-11-22 11:42:53.467 b.s.u.Utils [INFO] Using defaults.yaml from resources
+2016-11-22 11:42:53.472 b.s.u.Utils [INFO] Using storm.yaml from resources
+2016-11-22 11:43:03.537 o.a.s.s.o.e.j.s.Server [INFO] jetty-7.x.y-SNAPSHOT
+2016-11-22 11:43:03.566 o.a.s.s.o.e.j.s.h.ContextHandler [INFO] started o.a.s.s.o.e.j.s.ServletContextHandler{/,null}
+2016-11-22 11:43:03.601 o.a.s.s.o.e.j.s.AbstractConnector [INFO] Started SelectChannelConnector@0.0.0.0:8000
+2016-11-22 11:47:43.664 b.s.u.Utils [INFO] Using defaults.yaml from resources
+2016-11-22 11:47:43.715 b.s.u.Utils [INFO] Using storm.yaml from resources
+2016-11-22 11:47:54.728 o.a.s.s.o.a.z.ZooKeeper [INFO] Client environment:zookeeper.version=3.4.6-1569965, built on 02/20/2014 09:09 GMT
+2016-11-22 11:47:54.729 o.a.s.s.o.a.z.ZooKeeper [INFO] Client environment:host.name=192.168.1.3
+2016-11-22 11:47:54.729 o.a.s.s.o.a.z.ZooKeeper [INFO] Client environment:java.version=1.8.0_60
+2016-11-22 11:47:54.729 o.a.s.s.o.a.z.ZooKeeper [INFO] Client environment:java.vendor=Oracle Corporation
+2016-11-22 11:47:54.729 o.a.s.s.o.a.z.ZooKeeper [INFO] Client environment:java.home=/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre
+2016-11-22 11:47:54.729 o.a.s.s.o.a.z.ZooKeeper [INFO] Client environment:java.class.path=/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/asm-4.0.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/clojure-1.6.0.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/disruptor-2.10.4.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/hadoop-auth-2.4.0.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/kryo-2.21.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/log4j-api-2.1.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/log4j-core-2.1.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/log4j-over-slf4j-1.6.6.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/log4j-slf4j-impl-2.1.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/minlog-1.2.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/reflectasm-1.07-shaded.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/servlet-api-2.5.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/slf4j-api-1.7.7.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/storm-core-0.10.0.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/conf
+2016-11-22 11:47:54.729 o.a.s.s.o.a.z.ZooKeeper [INFO] Client environment:java.library.path=/usr/local/lib:/opt/local/lib:/usr/lib
+2016-11-22 11:47:54.729 o.a.s.s.o.a.z.ZooKeeper [INFO] Client environment:java.io.tmpdir=/var/folders/n2/0qh2lk9s3h1ft0qlqt07ddxc0000gn/T/
+2016-11-22 11:47:54.730 o.a.s.s.o.a.z.ZooKeeper [INFO] Client environment:java.compiler=<NA>
+2016-11-22 11:47:54.730 o.a.s.s.o.a.z.ZooKeeper [INFO] Client environment:os.name=Mac OS X
+2016-11-22 11:47:54.730 o.a.s.s.o.a.z.ZooKeeper [INFO] Client environment:os.arch=x86_64
+2016-11-22 11:47:54.730 o.a.s.s.o.a.z.ZooKeeper [INFO] Client environment:os.version=10.12.1
+2016-11-22 11:47:54.730 o.a.s.s.o.a.z.ZooKeeper [INFO] Client environment:user.name=Jiho
+2016-11-22 11:47:54.730 o.a.s.s.o.a.z.ZooKeeper [INFO] Client environment:user.home=/Users/Jiho
+2016-11-22 11:47:54.730 o.a.s.s.o.a.z.ZooKeeper [INFO] Client environment:user.dir=/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks
+2016-11-22 11:47:59.741 o.a.s.s.o.a.z.s.ZooKeeperServer [INFO] Server environment:zookeeper.version=3.4.6-1569965, built on 02/20/2014 09:09 GMT
+2016-11-22 11:47:59.741 o.a.s.s.o.a.z.s.ZooKeeperServer [INFO] Server environment:host.name=192.168.1.3
+2016-11-22 11:47:59.741 o.a.s.s.o.a.z.s.ZooKeeperServer [INFO] Server environment:java.version=1.8.0_60
+2016-11-22 11:47:59.742 o.a.s.s.o.a.z.s.ZooKeeperServer [INFO] Server environment:java.vendor=Oracle Corporation
+2016-11-22 11:47:59.742 o.a.s.s.o.a.z.s.ZooKeeperServer [INFO] Server environment:java.home=/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre
+2016-11-22 11:47:59.742 o.a.s.s.o.a.z.s.ZooKeeperServer [INFO] Server environment:java.class.path=/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/asm-4.0.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/clojure-1.6.0.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/disruptor-2.10.4.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/hadoop-auth-2.4.0.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/kryo-2.21.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/log4j-api-2.1.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/log4j-core-2.1.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/log4j-over-slf4j-1.6.6.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/log4j-slf4j-impl-2.1.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/minlog-1.2.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/reflectasm-1.07-shaded.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/servlet-api-2.5.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/slf4j-api-1.7.7.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/storm-core-0.10.0.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/conf
+2016-11-22 11:47:59.742 o.a.s.s.o.a.z.s.ZooKeeperServer [INFO] Server environment:java.library.path=/usr/local/lib:/opt/local/lib:/usr/lib
+2016-11-22 11:47:59.742 o.a.s.s.o.a.z.s.ZooKeeperServer [INFO] Server environment:java.io.tmpdir=/var/folders/n2/0qh2lk9s3h1ft0qlqt07ddxc0000gn/T/
+2016-11-22 11:47:59.742 o.a.s.s.o.a.z.s.ZooKeeperServer [INFO] Server environment:java.compiler=<NA>
+2016-11-22 11:47:59.742 o.a.s.s.o.a.z.s.ZooKeeperServer [INFO] Server environment:os.name=Mac OS X
+2016-11-22 11:47:59.742 o.a.s.s.o.a.z.s.ZooKeeperServer [INFO] Server environment:os.arch=x86_64
+2016-11-22 11:47:59.743 o.a.s.s.o.a.z.s.ZooKeeperServer [INFO] Server environment:os.version=10.12.1
+2016-11-22 11:47:59.743 o.a.s.s.o.a.z.s.ZooKeeperServer [INFO] Server environment:user.name=Jiho
+2016-11-22 11:47:59.743 o.a.s.s.o.a.z.s.ZooKeeperServer [INFO] Server environment:user.home=/Users/Jiho
+2016-11-22 11:47:59.743 o.a.s.s.o.a.z.s.ZooKeeperServer [INFO] Server environment:user.dir=/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks
+2016-11-22 11:47:59.905 b.s.u.Utils [INFO] Using defaults.yaml from resources
+2016-11-22 11:47:59.914 b.s.u.Utils [INFO] Using storm.yaml from resources
+2016-11-22 11:47:59.940 b.s.u.Utils [INFO] Using defaults.yaml from resources
+2016-11-22 11:47:59.948 b.s.u.Utils [INFO] Using storm.yaml from resources
+2016-11-22 11:48:10.016 o.a.s.s.o.e.j.s.Server [INFO] jetty-7.x.y-SNAPSHOT
+2016-11-22 11:48:10.046 o.a.s.s.o.e.j.s.h.ContextHandler [INFO] started o.a.s.s.o.e.j.s.ServletContextHandler{/,null}
+2016-11-22 11:48:10.081 o.a.s.s.o.e.j.s.AbstractConnector [INFO] Started SelectChannelConnector@0.0.0.0:8000
+2016-11-22 11:55:15.630 b.s.u.Utils [INFO] Using defaults.yaml from resources
+2016-11-22 11:55:15.679 b.s.u.Utils [INFO] Using storm.yaml from resources
+2016-11-22 11:55:26.644 o.a.s.s.o.a.z.ZooKeeper [INFO] Client environment:zookeeper.version=3.4.6-1569965, built on 02/20/2014 09:09 GMT
+2016-11-22 11:55:26.644 o.a.s.s.o.a.z.ZooKeeper [INFO] Client environment:host.name=192.168.1.3
+2016-11-22 11:55:26.644 o.a.s.s.o.a.z.ZooKeeper [INFO] Client environment:java.version=1.8.0_60
+2016-11-22 11:55:26.644 o.a.s.s.o.a.z.ZooKeeper [INFO] Client environment:java.vendor=Oracle Corporation
+2016-11-22 11:55:26.645 o.a.s.s.o.a.z.ZooKeeper [INFO] Client environment:java.home=/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre
+2016-11-22 11:55:26.645 o.a.s.s.o.a.z.ZooKeeper [INFO] Client environment:java.class.path=/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/asm-4.0.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/clojure-1.6.0.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/disruptor-2.10.4.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/hadoop-auth-2.4.0.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/kryo-2.21.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/log4j-api-2.1.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/log4j-core-2.1.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/log4j-over-slf4j-1.6.6.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/log4j-slf4j-impl-2.1.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/minlog-1.2.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/reflectasm-1.07-shaded.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/servlet-api-2.5.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/slf4j-api-1.7.7.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/storm-core-0.10.0.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/conf
+2016-11-22 11:55:26.645 o.a.s.s.o.a.z.ZooKeeper [INFO] Client environment:java.library.path=/usr/local/lib:/opt/local/lib:/usr/lib
+2016-11-22 11:55:26.645 o.a.s.s.o.a.z.ZooKeeper [INFO] Client environment:java.io.tmpdir=/var/folders/n2/0qh2lk9s3h1ft0qlqt07ddxc0000gn/T/
+2016-11-22 11:55:26.645 o.a.s.s.o.a.z.ZooKeeper [INFO] Client environment:java.compiler=<NA>
+2016-11-22 11:55:26.645 o.a.s.s.o.a.z.ZooKeeper [INFO] Client environment:os.name=Mac OS X
+2016-11-22 11:55:26.645 o.a.s.s.o.a.z.ZooKeeper [INFO] Client environment:os.arch=x86_64
+2016-11-22 11:55:26.645 o.a.s.s.o.a.z.ZooKeeper [INFO] Client environment:os.version=10.12.1
+2016-11-22 11:55:26.646 o.a.s.s.o.a.z.ZooKeeper [INFO] Client environment:user.name=Jiho
+2016-11-22 11:55:26.646 o.a.s.s.o.a.z.ZooKeeper [INFO] Client environment:user.home=/Users/Jiho
+2016-11-22 11:55:26.646 o.a.s.s.o.a.z.ZooKeeper [INFO] Client environment:user.dir=/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks
+2016-11-22 11:55:31.659 o.a.s.s.o.a.z.s.ZooKeeperServer [INFO] Server environment:zookeeper.version=3.4.6-1569965, built on 02/20/2014 09:09 GMT
+2016-11-22 11:55:31.660 o.a.s.s.o.a.z.s.ZooKeeperServer [INFO] Server environment:host.name=192.168.1.3
+2016-11-22 11:55:31.660 o.a.s.s.o.a.z.s.ZooKeeperServer [INFO] Server environment:java.version=1.8.0_60
+2016-11-22 11:55:31.660 o.a.s.s.o.a.z.s.ZooKeeperServer [INFO] Server environment:java.vendor=Oracle Corporation
+2016-11-22 11:55:31.660 o.a.s.s.o.a.z.s.ZooKeeperServer [INFO] Server environment:java.home=/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre
+2016-11-22 11:55:31.660 o.a.s.s.o.a.z.s.ZooKeeperServer [INFO] Server environment:java.class.path=/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/asm-4.0.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/clojure-1.6.0.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/disruptor-2.10.4.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/hadoop-auth-2.4.0.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/kryo-2.21.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/log4j-api-2.1.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/log4j-core-2.1.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/log4j-over-slf4j-1.6.6.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/log4j-slf4j-impl-2.1.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/minlog-1.2.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/reflectasm-1.07-shaded.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/servlet-api-2.5.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/slf4j-api-1.7.7.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/storm-core-0.10.0.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/conf
+2016-11-22 11:55:31.660 o.a.s.s.o.a.z.s.ZooKeeperServer [INFO] Server environment:java.library.path=/usr/local/lib:/opt/local/lib:/usr/lib
+2016-11-22 11:55:31.661 o.a.s.s.o.a.z.s.ZooKeeperServer [INFO] Server environment:java.io.tmpdir=/var/folders/n2/0qh2lk9s3h1ft0qlqt07ddxc0000gn/T/
+2016-11-22 11:55:31.661 o.a.s.s.o.a.z.s.ZooKeeperServer [INFO] Server environment:java.compiler=<NA>
+2016-11-22 11:55:31.661 o.a.s.s.o.a.z.s.ZooKeeperServer [INFO] Server environment:os.name=Mac OS X
+2016-11-22 11:55:31.661 o.a.s.s.o.a.z.s.ZooKeeperServer [INFO] Server environment:os.arch=x86_64
+2016-11-22 11:55:31.661 o.a.s.s.o.a.z.s.ZooKeeperServer [INFO] Server environment:os.version=10.12.1
+2016-11-22 11:55:31.661 o.a.s.s.o.a.z.s.ZooKeeperServer [INFO] Server environment:user.name=Jiho
+2016-11-22 11:55:31.661 o.a.s.s.o.a.z.s.ZooKeeperServer [INFO] Server environment:user.home=/Users/Jiho
+2016-11-22 11:55:31.661 o.a.s.s.o.a.z.s.ZooKeeperServer [INFO] Server environment:user.dir=/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks
+2016-11-22 11:55:31.809 b.s.u.Utils [INFO] Using defaults.yaml from resources
+2016-11-22 11:55:31.816 b.s.u.Utils [INFO] Using storm.yaml from resources
+2016-11-22 11:55:31.839 b.s.u.Utils [INFO] Using defaults.yaml from resources
+2016-11-22 11:55:31.844 b.s.u.Utils [INFO] Using storm.yaml from resources
+2016-11-22 11:55:41.916 o.a.s.s.o.e.j.s.Server [INFO] jetty-7.x.y-SNAPSHOT
+2016-11-22 11:55:41.943 o.a.s.s.o.e.j.s.h.ContextHandler [INFO] started o.a.s.s.o.e.j.s.ServletContextHandler{/,null}
+2016-11-22 11:55:41.971 o.a.s.s.o.e.j.s.AbstractConnector [INFO] Started SelectChannelConnector@0.0.0.0:8000
+2016-11-30 02:45:34.139 b.s.u.Utils [INFO] Using defaults.yaml from resources
+2016-11-30 02:45:34.192 b.s.u.Utils [INFO] Using storm.yaml from resources
+2016-11-30 02:45:35.150 o.a.s.s.o.a.z.ZooKeeper [INFO] Client environment:zookeeper.version=3.4.6-1569965, built on 02/20/2014 09:09 GMT
+2016-11-30 02:45:35.150 o.a.s.s.o.a.z.ZooKeeper [INFO] Client environment:host.name=pal-nat186-89-204.itap.purdue.edu
+2016-11-30 02:45:35.150 o.a.s.s.o.a.z.ZooKeeper [INFO] Client environment:java.version=1.8.0_60
+2016-11-30 02:45:35.150 o.a.s.s.o.a.z.ZooKeeper [INFO] Client environment:java.vendor=Oracle Corporation
+2016-11-30 02:45:35.150 o.a.s.s.o.a.z.ZooKeeper [INFO] Client environment:java.home=/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre
+2016-11-30 02:45:35.150 o.a.s.s.o.a.z.ZooKeeper [INFO] Client environment:java.class.path=/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/asm-4.0.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/clojure-1.6.0.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/disruptor-2.10.4.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/hadoop-auth-2.4.0.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/kryo-2.21.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/log4j-api-2.1.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/log4j-core-2.1.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/log4j-over-slf4j-1.6.6.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/log4j-slf4j-impl-2.1.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/minlog-1.2.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/reflectasm-1.07-shaded.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/servlet-api-2.5.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/slf4j-api-1.7.7.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/storm-core-0.10.0.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/conf
+2016-11-30 02:45:35.150 o.a.s.s.o.a.z.ZooKeeper [INFO] Client environment:java.library.path=/usr/local/lib:/opt/local/lib:/usr/lib
+2016-11-30 02:45:35.150 o.a.s.s.o.a.z.ZooKeeper [INFO] Client environment:java.io.tmpdir=/var/folders/n2/0qh2lk9s3h1ft0qlqt07ddxc0000gn/T/
+2016-11-30 02:45:35.150 o.a.s.s.o.a.z.ZooKeeper [INFO] Client environment:java.compiler=<NA>
+2016-11-30 02:45:35.150 o.a.s.s.o.a.z.ZooKeeper [INFO] Client environment:os.name=Mac OS X
+2016-11-30 02:45:35.151 o.a.s.s.o.a.z.ZooKeeper [INFO] Client environment:os.arch=x86_64
+2016-11-30 02:45:35.151 o.a.s.s.o.a.z.ZooKeeper [INFO] Client environment:os.version=10.12.1
+2016-11-30 02:45:35.151 o.a.s.s.o.a.z.ZooKeeper [INFO] Client environment:user.name=Jiho
+2016-11-30 02:45:35.151 o.a.s.s.o.a.z.ZooKeeper [INFO] Client environment:user.home=/Users/Jiho
+2016-11-30 02:45:35.151 o.a.s.s.o.a.z.ZooKeeper [INFO] Client environment:user.dir=/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks
+2016-11-30 02:45:35.157 o.a.s.s.o.a.z.s.ZooKeeperServer [INFO] Server environment:zookeeper.version=3.4.6-1569965, built on 02/20/2014 09:09 GMT
+2016-11-30 02:45:35.159 o.a.s.s.o.a.z.s.ZooKeeperServer [INFO] Server environment:host.name=pal-nat186-89-204.itap.purdue.edu
+2016-11-30 02:45:35.159 o.a.s.s.o.a.z.s.ZooKeeperServer [INFO] Server environment:java.version=1.8.0_60
+2016-11-30 02:45:35.159 o.a.s.s.o.a.z.s.ZooKeeperServer [INFO] Server environment:java.vendor=Oracle Corporation
+2016-11-30 02:45:35.159 o.a.s.s.o.a.z.s.ZooKeeperServer [INFO] Server environment:java.home=/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre
+2016-11-30 02:45:35.159 o.a.s.s.o.a.z.s.ZooKeeperServer [INFO] Server environment:java.class.path=/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/asm-4.0.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/clojure-1.6.0.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/disruptor-2.10.4.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/hadoop-auth-2.4.0.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/kryo-2.21.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/log4j-api-2.1.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/log4j-core-2.1.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/log4j-over-slf4j-1.6.6.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/log4j-slf4j-impl-2.1.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/minlog-1.2.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/reflectasm-1.07-shaded.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/servlet-api-2.5.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/slf4j-api-1.7.7.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/storm-core-0.10.0.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/conf
+2016-11-30 02:45:35.159 o.a.s.s.o.a.z.s.ZooKeeperServer [INFO] Server environment:java.library.path=/usr/local/lib:/opt/local/lib:/usr/lib
+2016-11-30 02:45:35.159 o.a.s.s.o.a.z.s.ZooKeeperServer [INFO] Server environment:java.io.tmpdir=/var/folders/n2/0qh2lk9s3h1ft0qlqt07ddxc0000gn/T/
+2016-11-30 02:45:35.159 o.a.s.s.o.a.z.s.ZooKeeperServer [INFO] Server environment:java.compiler=<NA>
+2016-11-30 02:45:35.159 o.a.s.s.o.a.z.s.ZooKeeperServer [INFO] Server environment:os.name=Mac OS X
+2016-11-30 02:45:35.159 o.a.s.s.o.a.z.s.ZooKeeperServer [INFO] Server environment:os.arch=x86_64
+2016-11-30 02:45:35.160 o.a.s.s.o.a.z.s.ZooKeeperServer [INFO] Server environment:os.version=10.12.1
+2016-11-30 02:45:35.160 o.a.s.s.o.a.z.s.ZooKeeperServer [INFO] Server environment:user.name=Jiho
+2016-11-30 02:45:35.160 o.a.s.s.o.a.z.s.ZooKeeperServer [INFO] Server environment:user.home=/Users/Jiho
+2016-11-30 02:45:35.160 o.a.s.s.o.a.z.s.ZooKeeperServer [INFO] Server environment:user.dir=/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks
+2016-11-30 02:45:35.312 b.s.u.Utils [INFO] Using defaults.yaml from resources
+2016-11-30 02:45:35.319 b.s.u.Utils [INFO] Using storm.yaml from resources
+2016-11-30 02:45:35.343 b.s.u.Utils [INFO] Using defaults.yaml from resources
+2016-11-30 02:45:35.349 b.s.u.Utils [INFO] Using storm.yaml from resources
+2016-11-30 02:45:35.396 o.a.s.s.o.e.j.s.Server [INFO] jetty-7.x.y-SNAPSHOT
+2016-11-30 02:45:35.417 o.a.s.s.o.e.j.s.h.ContextHandler [INFO] started o.a.s.s.o.e.j.s.ServletContextHandler{/,null}
+2016-11-30 02:45:35.443 o.a.s.s.o.e.j.s.AbstractConnector [INFO] Started SelectChannelConnector@0.0.0.0:8000
+2016-11-30 03:21:41.773 b.s.u.Utils [INFO] Using defaults.yaml from resources
+2016-11-30 03:21:41.822 b.s.u.Utils [INFO] Using storm.yaml from resources
+2016-11-30 03:21:42.807 o.a.s.s.o.a.z.ZooKeeper [INFO] Client environment:zookeeper.version=3.4.6-1569965, built on 02/20/2014 09:09 GMT
+2016-11-30 03:21:42.807 o.a.s.s.o.a.z.ZooKeeper [INFO] Client environment:host.name=pal-nat186-89-204.itap.purdue.edu
+2016-11-30 03:21:42.807 o.a.s.s.o.a.z.ZooKeeper [INFO] Client environment:java.version=1.8.0_60
+2016-11-30 03:21:42.807 o.a.s.s.o.a.z.ZooKeeper [INFO] Client environment:java.vendor=Oracle Corporation
+2016-11-30 03:21:42.807 o.a.s.s.o.a.z.ZooKeeper [INFO] Client environment:java.home=/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre
+2016-11-30 03:21:42.808 o.a.s.s.o.a.z.ZooKeeper [INFO] Client environment:java.class.path=/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/asm-4.0.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/clojure-1.6.0.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/disruptor-2.10.4.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/hadoop-auth-2.4.0.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/kryo-2.21.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/log4j-api-2.1.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/log4j-core-2.1.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/log4j-over-slf4j-1.6.6.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/log4j-slf4j-impl-2.1.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/minlog-1.2.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/reflectasm-1.07-shaded.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/servlet-api-2.5.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/slf4j-api-1.7.7.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/storm-core-0.10.0.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/conf
+2016-11-30 03:21:42.808 o.a.s.s.o.a.z.ZooKeeper [INFO] Client environment:java.library.path=/usr/local/lib:/opt/local/lib:/usr/lib
+2016-11-30 03:21:42.808 o.a.s.s.o.a.z.ZooKeeper [INFO] Client environment:java.io.tmpdir=/var/folders/n2/0qh2lk9s3h1ft0qlqt07ddxc0000gn/T/
+2016-11-30 03:21:42.808 o.a.s.s.o.a.z.ZooKeeper [INFO] Client environment:java.compiler=<NA>
+2016-11-30 03:21:42.808 o.a.s.s.o.a.z.ZooKeeper [INFO] Client environment:os.name=Mac OS X
+2016-11-30 03:21:42.808 o.a.s.s.o.a.z.ZooKeeper [INFO] Client environment:os.arch=x86_64
+2016-11-30 03:21:42.808 o.a.s.s.o.a.z.ZooKeeper [INFO] Client environment:os.version=10.12.1
+2016-11-30 03:21:42.808 o.a.s.s.o.a.z.ZooKeeper [INFO] Client environment:user.name=Jiho
+2016-11-30 03:21:42.808 o.a.s.s.o.a.z.ZooKeeper [INFO] Client environment:user.home=/Users/Jiho
+2016-11-30 03:21:42.808 o.a.s.s.o.a.z.ZooKeeper [INFO] Client environment:user.dir=/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks
+2016-11-30 03:21:42.815 o.a.s.s.o.a.z.s.ZooKeeperServer [INFO] Server environment:zookeeper.version=3.4.6-1569965, built on 02/20/2014 09:09 GMT
+2016-11-30 03:21:42.817 o.a.s.s.o.a.z.s.ZooKeeperServer [INFO] Server environment:host.name=pal-nat186-89-204.itap.purdue.edu
+2016-11-30 03:21:42.817 o.a.s.s.o.a.z.s.ZooKeeperServer [INFO] Server environment:java.version=1.8.0_60
+2016-11-30 03:21:42.817 o.a.s.s.o.a.z.s.ZooKeeperServer [INFO] Server environment:java.vendor=Oracle Corporation
+2016-11-30 03:21:42.817 o.a.s.s.o.a.z.s.ZooKeeperServer [INFO] Server environment:java.home=/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre
+2016-11-30 03:21:42.817 o.a.s.s.o.a.z.s.ZooKeeperServer [INFO] Server environment:java.class.path=/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/asm-4.0.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/clojure-1.6.0.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/disruptor-2.10.4.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/hadoop-auth-2.4.0.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/kryo-2.21.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/log4j-api-2.1.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/log4j-core-2.1.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/log4j-over-slf4j-1.6.6.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/log4j-slf4j-impl-2.1.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/minlog-1.2.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/reflectasm-1.07-shaded.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/servlet-api-2.5.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/slf4j-api-1.7.7.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/storm-core-0.10.0.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/conf
+2016-11-30 03:21:42.817 o.a.s.s.o.a.z.s.ZooKeeperServer [INFO] Server environment:java.library.path=/usr/local/lib:/opt/local/lib:/usr/lib
+2016-11-30 03:21:42.817 o.a.s.s.o.a.z.s.ZooKeeperServer [INFO] Server environment:java.io.tmpdir=/var/folders/n2/0qh2lk9s3h1ft0qlqt07ddxc0000gn/T/
+2016-11-30 03:21:42.817 o.a.s.s.o.a.z.s.ZooKeeperServer [INFO] Server environment:java.compiler=<NA>
+2016-11-30 03:21:42.817 o.a.s.s.o.a.z.s.ZooKeeperServer [INFO] Server environment:os.name=Mac OS X
+2016-11-30 03:21:42.818 o.a.s.s.o.a.z.s.ZooKeeperServer [INFO] Server environment:os.arch=x86_64
+2016-11-30 03:21:42.818 o.a.s.s.o.a.z.s.ZooKeeperServer [INFO] Server environment:os.version=10.12.1
+2016-11-30 03:21:42.818 o.a.s.s.o.a.z.s.ZooKeeperServer [INFO] Server environment:user.name=Jiho
+2016-11-30 03:21:42.818 o.a.s.s.o.a.z.s.ZooKeeperServer [INFO] Server environment:user.home=/Users/Jiho
+2016-11-30 03:21:42.818 o.a.s.s.o.a.z.s.ZooKeeperServer [INFO] Server environment:user.dir=/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks
+2016-11-30 03:21:42.976 b.s.u.Utils [INFO] Using defaults.yaml from resources
+2016-11-30 03:21:42.983 b.s.u.Utils [INFO] Using storm.yaml from resources
+2016-11-30 03:21:43.009 b.s.u.Utils [INFO] Using defaults.yaml from resources
+2016-11-30 03:21:43.015 b.s.u.Utils [INFO] Using storm.yaml from resources
+2016-11-30 03:21:43.068 o.a.s.s.o.e.j.s.Server [INFO] jetty-7.x.y-SNAPSHOT
+2016-11-30 03:21:43.090 o.a.s.s.o.e.j.s.h.ContextHandler [INFO] started o.a.s.s.o.e.j.s.ServletContextHandler{/,null}
+2016-11-30 03:21:43.115 o.a.s.s.o.e.j.s.AbstractConnector [INFO] Started SelectChannelConnector@0.0.0.0:8000
+2016-11-30 03:29:38.683 b.s.u.Utils [INFO] Using defaults.yaml from resources
+2016-11-30 03:29:38.736 b.s.u.Utils [INFO] Using storm.yaml from resources
+2016-11-30 03:29:39.715 o.a.s.s.o.a.z.ZooKeeper [INFO] Client environment:zookeeper.version=3.4.6-1569965, built on 02/20/2014 09:09 GMT
+2016-11-30 03:29:39.715 o.a.s.s.o.a.z.ZooKeeper [INFO] Client environment:host.name=pal-nat186-89-204.itap.purdue.edu
+2016-11-30 03:29:39.715 o.a.s.s.o.a.z.ZooKeeper [INFO] Client environment:java.version=1.8.0_60
+2016-11-30 03:29:39.715 o.a.s.s.o.a.z.ZooKeeper [INFO] Client environment:java.vendor=Oracle Corporation
+2016-11-30 03:29:39.715 o.a.s.s.o.a.z.ZooKeeper [INFO] Client environment:java.home=/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre
+2016-11-30 03:29:39.716 o.a.s.s.o.a.z.ZooKeeper [INFO] Client environment:java.class.path=/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/asm-4.0.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/clojure-1.6.0.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/disruptor-2.10.4.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/hadoop-auth-2.4.0.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/kryo-2.21.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/log4j-api-2.1.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/log4j-core-2.1.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/log4j-over-slf4j-1.6.6.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/log4j-slf4j-impl-2.1.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/minlog-1.2.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/reflectasm-1.07-shaded.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/servlet-api-2.5.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/slf4j-api-1.7.7.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/storm-core-0.10.0.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/conf
+2016-11-30 03:29:39.716 o.a.s.s.o.a.z.ZooKeeper [INFO] Client environment:java.library.path=/usr/local/lib:/opt/local/lib:/usr/lib
+2016-11-30 03:29:39.716 o.a.s.s.o.a.z.ZooKeeper [INFO] Client environment:java.io.tmpdir=/var/folders/n2/0qh2lk9s3h1ft0qlqt07ddxc0000gn/T/
+2016-11-30 03:29:39.716 o.a.s.s.o.a.z.ZooKeeper [INFO] Client environment:java.compiler=<NA>
+2016-11-30 03:29:39.716 o.a.s.s.o.a.z.ZooKeeper [INFO] Client environment:os.name=Mac OS X
+2016-11-30 03:29:39.716 o.a.s.s.o.a.z.ZooKeeper [INFO] Client environment:os.arch=x86_64
+2016-11-30 03:29:39.716 o.a.s.s.o.a.z.ZooKeeper [INFO] Client environment:os.version=10.12.1
+2016-11-30 03:29:39.716 o.a.s.s.o.a.z.ZooKeeper [INFO] Client environment:user.name=Jiho
+2016-11-30 03:29:39.716 o.a.s.s.o.a.z.ZooKeeper [INFO] Client environment:user.home=/Users/Jiho
+2016-11-30 03:29:39.716 o.a.s.s.o.a.z.ZooKeeper [INFO] Client environment:user.dir=/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks
+2016-11-30 03:29:39.722 o.a.s.s.o.a.z.s.ZooKeeperServer [INFO] Server environment:zookeeper.version=3.4.6-1569965, built on 02/20/2014 09:09 GMT
+2016-11-30 03:29:39.724 o.a.s.s.o.a.z.s.ZooKeeperServer [INFO] Server environment:host.name=pal-nat186-89-204.itap.purdue.edu
+2016-11-30 03:29:39.724 o.a.s.s.o.a.z.s.ZooKeeperServer [INFO] Server environment:java.version=1.8.0_60
+2016-11-30 03:29:39.724 o.a.s.s.o.a.z.s.ZooKeeperServer [INFO] Server environment:java.vendor=Oracle Corporation
+2016-11-30 03:29:39.724 o.a.s.s.o.a.z.s.ZooKeeperServer [INFO] Server environment:java.home=/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre
+2016-11-30 03:29:39.724 o.a.s.s.o.a.z.s.ZooKeeperServer [INFO] Server environment:java.class.path=/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/asm-4.0.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/clojure-1.6.0.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/disruptor-2.10.4.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/hadoop-auth-2.4.0.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/kryo-2.21.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/log4j-api-2.1.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/log4j-core-2.1.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/log4j-over-slf4j-1.6.6.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/log4j-slf4j-impl-2.1.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/minlog-1.2.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/reflectasm-1.07-shaded.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/servlet-api-2.5.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/slf4j-api-1.7.7.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/storm-core-0.10.0.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/conf
+2016-11-30 03:29:39.724 o.a.s.s.o.a.z.s.ZooKeeperServer [INFO] Server environment:java.library.path=/usr/local/lib:/opt/local/lib:/usr/lib
+2016-11-30 03:29:39.724 o.a.s.s.o.a.z.s.ZooKeeperServer [INFO] Server environment:java.io.tmpdir=/var/folders/n2/0qh2lk9s3h1ft0qlqt07ddxc0000gn/T/
+2016-11-30 03:29:39.724 o.a.s.s.o.a.z.s.ZooKeeperServer [INFO] Server environment:java.compiler=<NA>
+2016-11-30 03:29:39.724 o.a.s.s.o.a.z.s.ZooKeeperServer [INFO] Server environment:os.name=Mac OS X
+2016-11-30 03:29:39.724 o.a.s.s.o.a.z.s.ZooKeeperServer [INFO] Server environment:os.arch=x86_64
+2016-11-30 03:29:39.724 o.a.s.s.o.a.z.s.ZooKeeperServer [INFO] Server environment:os.version=10.12.1
+2016-11-30 03:29:39.725 o.a.s.s.o.a.z.s.ZooKeeperServer [INFO] Server environment:user.name=Jiho
+2016-11-30 03:29:39.725 o.a.s.s.o.a.z.s.ZooKeeperServer [INFO] Server environment:user.home=/Users/Jiho
+2016-11-30 03:29:39.725 o.a.s.s.o.a.z.s.ZooKeeperServer [INFO] Server environment:user.dir=/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks
+2016-11-30 03:29:39.880 b.s.u.Utils [INFO] Using defaults.yaml from resources
+2016-11-30 03:29:39.887 b.s.u.Utils [INFO] Using storm.yaml from resources
+2016-11-30 03:29:39.913 b.s.u.Utils [INFO] Using defaults.yaml from resources
+2016-11-30 03:29:39.921 b.s.u.Utils [INFO] Using storm.yaml from resources
+2016-11-30 03:29:39.972 o.a.s.s.o.e.j.s.Server [INFO] jetty-7.x.y-SNAPSHOT
+2016-11-30 03:29:39.995 o.a.s.s.o.e.j.s.h.ContextHandler [INFO] started o.a.s.s.o.e.j.s.ServletContextHandler{/,null}
+2016-11-30 03:29:40.019 o.a.s.s.o.e.j.s.AbstractConnector [INFO] Started SelectChannelConnector@0.0.0.0:8000
+2016-11-30 05:27:53.312 b.s.u.Utils [INFO] Using defaults.yaml from resources
+2016-11-30 05:27:53.364 b.s.u.Utils [INFO] Using storm.yaml from resources
+2016-11-30 05:27:54.346 o.a.s.s.o.a.z.ZooKeeper [INFO] Client environment:zookeeper.version=3.4.6-1569965, built on 02/20/2014 09:09 GMT
+2016-11-30 05:27:54.346 o.a.s.s.o.a.z.ZooKeeper [INFO] Client environment:host.name=pal-nat186-89-204.itap.purdue.edu
+2016-11-30 05:27:54.346 o.a.s.s.o.a.z.ZooKeeper [INFO] Client environment:java.version=1.8.0_60
+2016-11-30 05:27:54.346 o.a.s.s.o.a.z.ZooKeeper [INFO] Client environment:java.vendor=Oracle Corporation
+2016-11-30 05:27:54.347 o.a.s.s.o.a.z.ZooKeeper [INFO] Client environment:java.home=/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre
+2016-11-30 05:27:54.347 o.a.s.s.o.a.z.ZooKeeper [INFO] Client environment:java.class.path=/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/asm-4.0.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/clojure-1.6.0.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/disruptor-2.10.4.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/hadoop-auth-2.4.0.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/kryo-2.21.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/log4j-api-2.1.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/log4j-core-2.1.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/log4j-over-slf4j-1.6.6.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/log4j-slf4j-impl-2.1.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/minlog-1.2.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/reflectasm-1.07-shaded.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/servlet-api-2.5.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/slf4j-api-1.7.7.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/storm-core-0.10.0.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/conf
+2016-11-30 05:27:54.347 o.a.s.s.o.a.z.ZooKeeper [INFO] Client environment:java.library.path=/usr/local/lib:/opt/local/lib:/usr/lib
+2016-11-30 05:27:54.347 o.a.s.s.o.a.z.ZooKeeper [INFO] Client environment:java.io.tmpdir=/var/folders/n2/0qh2lk9s3h1ft0qlqt07ddxc0000gn/T/
+2016-11-30 05:27:54.347 o.a.s.s.o.a.z.ZooKeeper [INFO] Client environment:java.compiler=<NA>
+2016-11-30 05:27:54.347 o.a.s.s.o.a.z.ZooKeeper [INFO] Client environment:os.name=Mac OS X
+2016-11-30 05:27:54.347 o.a.s.s.o.a.z.ZooKeeper [INFO] Client environment:os.arch=x86_64
+2016-11-30 05:27:54.347 o.a.s.s.o.a.z.ZooKeeper [INFO] Client environment:os.version=10.12.1
+2016-11-30 05:27:54.347 o.a.s.s.o.a.z.ZooKeeper [INFO] Client environment:user.name=Jiho
+2016-11-30 05:27:54.347 o.a.s.s.o.a.z.ZooKeeper [INFO] Client environment:user.home=/Users/Jiho
+2016-11-30 05:27:54.347 o.a.s.s.o.a.z.ZooKeeper [INFO] Client environment:user.dir=/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks
+2016-11-30 05:27:54.353 o.a.s.s.o.a.z.s.ZooKeeperServer [INFO] Server environment:zookeeper.version=3.4.6-1569965, built on 02/20/2014 09:09 GMT
+2016-11-30 05:27:54.355 o.a.s.s.o.a.z.s.ZooKeeperServer [INFO] Server environment:host.name=pal-nat186-89-204.itap.purdue.edu
+2016-11-30 05:27:54.355 o.a.s.s.o.a.z.s.ZooKeeperServer [INFO] Server environment:java.version=1.8.0_60
+2016-11-30 05:27:54.355 o.a.s.s.o.a.z.s.ZooKeeperServer [INFO] Server environment:java.vendor=Oracle Corporation
+2016-11-30 05:27:54.355 o.a.s.s.o.a.z.s.ZooKeeperServer [INFO] Server environment:java.home=/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre
+2016-11-30 05:27:54.355 o.a.s.s.o.a.z.s.ZooKeeperServer [INFO] Server environment:java.class.path=/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/asm-4.0.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/clojure-1.6.0.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/disruptor-2.10.4.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/hadoop-auth-2.4.0.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/kryo-2.21.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/log4j-api-2.1.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/log4j-core-2.1.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/log4j-over-slf4j-1.6.6.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/log4j-slf4j-impl-2.1.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/minlog-1.2.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/reflectasm-1.07-shaded.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/servlet-api-2.5.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/slf4j-api-1.7.7.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/storm-core-0.10.0.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/conf
+2016-11-30 05:27:54.355 o.a.s.s.o.a.z.s.ZooKeeperServer [INFO] Server environment:java.library.path=/usr/local/lib:/opt/local/lib:/usr/lib
+2016-11-30 05:27:54.356 o.a.s.s.o.a.z.s.ZooKeeperServer [INFO] Server environment:java.io.tmpdir=/var/folders/n2/0qh2lk9s3h1ft0qlqt07ddxc0000gn/T/
+2016-11-30 05:27:54.356 o.a.s.s.o.a.z.s.ZooKeeperServer [INFO] Server environment:java.compiler=<NA>
+2016-11-30 05:27:54.356 o.a.s.s.o.a.z.s.ZooKeeperServer [INFO] Server environment:os.name=Mac OS X
+2016-11-30 05:27:54.356 o.a.s.s.o.a.z.s.ZooKeeperServer [INFO] Server environment:os.arch=x86_64
+2016-11-30 05:27:54.356 o.a.s.s.o.a.z.s.ZooKeeperServer [INFO] Server environment:os.version=10.12.1
+2016-11-30 05:27:54.356 o.a.s.s.o.a.z.s.ZooKeeperServer [INFO] Server environment:user.name=Jiho
+2016-11-30 05:27:54.356 o.a.s.s.o.a.z.s.ZooKeeperServer [INFO] Server environment:user.home=/Users/Jiho
+2016-11-30 05:27:54.356 o.a.s.s.o.a.z.s.ZooKeeperServer [INFO] Server environment:user.dir=/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks
+2016-11-30 05:27:54.513 b.s.u.Utils [INFO] Using defaults.yaml from resources
+2016-11-30 05:27:54.521 b.s.u.Utils [INFO] Using storm.yaml from resources
+2016-11-30 05:27:54.543 b.s.u.Utils [INFO] Using defaults.yaml from resources
+2016-11-30 05:27:54.550 b.s.u.Utils [INFO] Using storm.yaml from resources
+2016-11-30 05:27:54.601 o.a.s.s.o.e.j.s.Server [INFO] jetty-7.x.y-SNAPSHOT
+2016-11-30 05:27:54.627 o.a.s.s.o.e.j.s.h.ContextHandler [INFO] started o.a.s.s.o.e.j.s.ServletContextHandler{/,null}
+2016-11-30 05:27:54.649 o.a.s.s.o.e.j.s.AbstractConnector [INFO] Started SelectChannelConnector@0.0.0.0:8000
+2016-11-30 05:40:09.326 b.s.u.Utils [INFO] Using defaults.yaml from resources
+2016-11-30 05:40:09.379 b.s.u.Utils [INFO] Using storm.yaml from resources
+2016-11-30 05:40:10.409 o.a.s.s.o.a.z.ZooKeeper [INFO] Client environment:zookeeper.version=3.4.6-1569965, built on 02/20/2014 09:09 GMT
+2016-11-30 05:40:10.410 o.a.s.s.o.a.z.ZooKeeper [INFO] Client environment:host.name=pal-nat186-89-204.itap.purdue.edu
+2016-11-30 05:40:10.410 o.a.s.s.o.a.z.ZooKeeper [INFO] Client environment:java.version=1.8.0_60
+2016-11-30 05:40:10.410 o.a.s.s.o.a.z.ZooKeeper [INFO] Client environment:java.vendor=Oracle Corporation
+2016-11-30 05:40:10.410 o.a.s.s.o.a.z.ZooKeeper [INFO] Client environment:java.home=/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre
+2016-11-30 05:40:10.410 o.a.s.s.o.a.z.ZooKeeper [INFO] Client environment:java.class.path=/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/asm-4.0.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/clojure-1.6.0.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/disruptor-2.10.4.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/hadoop-auth-2.4.0.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/kryo-2.21.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/log4j-api-2.1.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/log4j-core-2.1.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/log4j-over-slf4j-1.6.6.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/log4j-slf4j-impl-2.1.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/minlog-1.2.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/reflectasm-1.07-shaded.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/servlet-api-2.5.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/slf4j-api-1.7.7.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/storm-core-0.10.0.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/conf
+2016-11-30 05:40:10.410 o.a.s.s.o.a.z.ZooKeeper [INFO] Client environment:java.library.path=/usr/local/lib:/opt/local/lib:/usr/lib
+2016-11-30 05:40:10.410 o.a.s.s.o.a.z.ZooKeeper [INFO] Client environment:java.io.tmpdir=/var/folders/n2/0qh2lk9s3h1ft0qlqt07ddxc0000gn/T/
+2016-11-30 05:40:10.410 o.a.s.s.o.a.z.ZooKeeper [INFO] Client environment:java.compiler=<NA>
+2016-11-30 05:40:10.410 o.a.s.s.o.a.z.ZooKeeper [INFO] Client environment:os.name=Mac OS X
+2016-11-30 05:40:10.410 o.a.s.s.o.a.z.ZooKeeper [INFO] Client environment:os.arch=x86_64
+2016-11-30 05:40:10.410 o.a.s.s.o.a.z.ZooKeeper [INFO] Client environment:os.version=10.12.1
+2016-11-30 05:40:10.410 o.a.s.s.o.a.z.ZooKeeper [INFO] Client environment:user.name=Jiho
+2016-11-30 05:40:10.410 o.a.s.s.o.a.z.ZooKeeper [INFO] Client environment:user.home=/Users/Jiho
+2016-11-30 05:40:10.411 o.a.s.s.o.a.z.ZooKeeper [INFO] Client environment:user.dir=/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks
+2016-11-30 05:40:10.416 o.a.s.s.o.a.z.s.ZooKeeperServer [INFO] Server environment:zookeeper.version=3.4.6-1569965, built on 02/20/2014 09:09 GMT
+2016-11-30 05:40:10.418 o.a.s.s.o.a.z.s.ZooKeeperServer [INFO] Server environment:host.name=pal-nat186-89-204.itap.purdue.edu
+2016-11-30 05:40:10.418 o.a.s.s.o.a.z.s.ZooKeeperServer [INFO] Server environment:java.version=1.8.0_60
+2016-11-30 05:40:10.418 o.a.s.s.o.a.z.s.ZooKeeperServer [INFO] Server environment:java.vendor=Oracle Corporation
+2016-11-30 05:40:10.418 o.a.s.s.o.a.z.s.ZooKeeperServer [INFO] Server environment:java.home=/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre
+2016-11-30 05:40:10.419 o.a.s.s.o.a.z.s.ZooKeeperServer [INFO] Server environment:java.class.path=/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/asm-4.0.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/clojure-1.6.0.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/disruptor-2.10.4.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/hadoop-auth-2.4.0.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/kryo-2.21.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/log4j-api-2.1.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/log4j-core-2.1.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/log4j-over-slf4j-1.6.6.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/log4j-slf4j-impl-2.1.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/minlog-1.2.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/reflectasm-1.07-shaded.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/servlet-api-2.5.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/slf4j-api-1.7.7.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/lib/storm-core-0.10.0.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks/apache-storm-0.10.0/conf
+2016-11-30 05:40:10.419 o.a.s.s.o.a.z.s.ZooKeeperServer [INFO] Server environment:java.library.path=/usr/local/lib:/opt/local/lib:/usr/lib
+2016-11-30 05:40:10.419 o.a.s.s.o.a.z.s.ZooKeeperServer [INFO] Server environment:java.io.tmpdir=/var/folders/n2/0qh2lk9s3h1ft0qlqt07ddxc0000gn/T/
+2016-11-30 05:40:10.419 o.a.s.s.o.a.z.s.ZooKeeperServer [INFO] Server environment:java.compiler=<NA>
+2016-11-30 05:40:10.419 o.a.s.s.o.a.z.s.ZooKeeperServer [INFO] Server environment:os.name=Mac OS X
+2016-11-30 05:40:10.419 o.a.s.s.o.a.z.s.ZooKeeperServer [INFO] Server environment:os.arch=x86_64
+2016-11-30 05:40:10.419 o.a.s.s.o.a.z.s.ZooKeeperServer [INFO] Server environment:os.version=10.12.1
+2016-11-30 05:40:10.419 o.a.s.s.o.a.z.s.ZooKeeperServer [INFO] Server environment:user.name=Jiho
+2016-11-30 05:40:10.419 o.a.s.s.o.a.z.s.ZooKeeperServer [INFO] Server environment:user.home=/Users/Jiho
+2016-11-30 05:40:10.419 o.a.s.s.o.a.z.s.ZooKeeperServer [INFO] Server environment:user.dir=/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks
+2016-11-30 05:40:10.588 b.s.u.Utils [INFO] Using defaults.yaml from resources
+2016-11-30 05:40:10.596 b.s.u.Utils [INFO] Using storm.yaml from resources
+2016-11-30 05:40:10.624 b.s.u.Utils [INFO] Using defaults.yaml from resources
+2016-11-30 05:40:10.632 b.s.u.Utils [INFO] Using storm.yaml from resources
+2016-11-30 05:40:10.690 o.a.s.s.o.e.j.s.Server [INFO] jetty-7.x.y-SNAPSHOT
+2016-11-30 05:40:10.712 o.a.s.s.o.e.j.s.h.ContextHandler [INFO] started o.a.s.s.o.e.j.s.ServletContextHandler{/,null}
+2016-11-30 05:40:10.743 o.a.s.s.o.e.j.s.AbstractConnector [INFO] Started SelectChannelConnector@0.0.0.0:8000
+2016-12-01 23:32:06.549 b.s.u.Utils [INFO] Using defaults.yaml from resources
+2016-12-01 23:32:06.599 b.s.u.Utils [INFO] Using storm.yaml from resources
+2016-12-01 23:32:07.538 o.a.s.s.o.a.z.ZooKeeper [INFO] Client environment:zookeeper.version=3.4.6-1569965, built on 02/20/2014 09:09 GMT
+2016-12-01 23:32:07.539 o.a.s.s.o.a.z.ZooKeeper [INFO] Client environment:host.name=pal-nat186-83-147.itap.purdue.edu
+2016-12-01 23:32:07.539 o.a.s.s.o.a.z.ZooKeeper [INFO] Client environment:java.version=1.8.0_60
+2016-12-01 23:32:07.539 o.a.s.s.o.a.z.ZooKeeper [INFO] Client environment:java.vendor=Oracle Corporation
+2016-12-01 23:32:07.539 o.a.s.s.o.a.z.ZooKeeper [INFO] Client environment:java.home=/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre
+2016-12-01 23:32:07.539 o.a.s.s.o.a.z.ZooKeeper [INFO] Client environment:java.class.path=/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks-enc/apache-storm-0.10.0/lib/asm-4.0.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks-enc/apache-storm-0.10.0/lib/clojure-1.6.0.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks-enc/apache-storm-0.10.0/lib/disruptor-2.10.4.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks-enc/apache-storm-0.10.0/lib/hadoop-auth-2.4.0.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks-enc/apache-storm-0.10.0/lib/kryo-2.21.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks-enc/apache-storm-0.10.0/lib/log4j-api-2.1.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks-enc/apache-storm-0.10.0/lib/log4j-core-2.1.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks-enc/apache-storm-0.10.0/lib/log4j-over-slf4j-1.6.6.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks-enc/apache-storm-0.10.0/lib/log4j-slf4j-impl-2.1.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks-enc/apache-storm-0.10.0/lib/minlog-1.2.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks-enc/apache-storm-0.10.0/lib/reflectasm-1.07-shaded.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks-enc/apache-storm-0.10.0/lib/servlet-api-2.5.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks-enc/apache-storm-0.10.0/lib/slf4j-api-1.7.7.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks-enc/apache-storm-0.10.0/lib/storm-core-0.10.0.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks-enc/apache-storm-0.10.0:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks-enc/apache-storm-0.10.0/conf
+2016-12-01 23:32:07.539 o.a.s.s.o.a.z.ZooKeeper [INFO] Client environment:java.library.path=/usr/local/lib:/opt/local/lib:/usr/lib
+2016-12-01 23:32:07.539 o.a.s.s.o.a.z.ZooKeeper [INFO] Client environment:java.io.tmpdir=/var/folders/n2/0qh2lk9s3h1ft0qlqt07ddxc0000gn/T/
+2016-12-01 23:32:07.539 o.a.s.s.o.a.z.ZooKeeper [INFO] Client environment:java.compiler=<NA>
+2016-12-01 23:32:07.539 o.a.s.s.o.a.z.ZooKeeper [INFO] Client environment:os.name=Mac OS X
+2016-12-01 23:32:07.539 o.a.s.s.o.a.z.ZooKeeper [INFO] Client environment:os.arch=x86_64
+2016-12-01 23:32:07.540 o.a.s.s.o.a.z.ZooKeeper [INFO] Client environment:os.version=10.12.1
+2016-12-01 23:32:07.540 o.a.s.s.o.a.z.ZooKeeper [INFO] Client environment:user.name=Jiho
+2016-12-01 23:32:07.540 o.a.s.s.o.a.z.ZooKeeper [INFO] Client environment:user.home=/Users/Jiho
+2016-12-01 23:32:07.540 o.a.s.s.o.a.z.ZooKeeper [INFO] Client environment:user.dir=/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks-enc
+2016-12-01 23:32:07.546 o.a.s.s.o.a.z.s.ZooKeeperServer [INFO] Server environment:zookeeper.version=3.4.6-1569965, built on 02/20/2014 09:09 GMT
+2016-12-01 23:32:07.548 o.a.s.s.o.a.z.s.ZooKeeperServer [INFO] Server environment:host.name=pal-nat186-83-147.itap.purdue.edu
+2016-12-01 23:32:07.548 o.a.s.s.o.a.z.s.ZooKeeperServer [INFO] Server environment:java.version=1.8.0_60
+2016-12-01 23:32:07.548 o.a.s.s.o.a.z.s.ZooKeeperServer [INFO] Server environment:java.vendor=Oracle Corporation
+2016-12-01 23:32:07.548 o.a.s.s.o.a.z.s.ZooKeeperServer [INFO] Server environment:java.home=/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre
+2016-12-01 23:32:07.548 o.a.s.s.o.a.z.s.ZooKeeperServer [INFO] Server environment:java.class.path=/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks-enc/apache-storm-0.10.0/lib/asm-4.0.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks-enc/apache-storm-0.10.0/lib/clojure-1.6.0.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks-enc/apache-storm-0.10.0/lib/disruptor-2.10.4.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks-enc/apache-storm-0.10.0/lib/hadoop-auth-2.4.0.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks-enc/apache-storm-0.10.0/lib/kryo-2.21.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks-enc/apache-storm-0.10.0/lib/log4j-api-2.1.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks-enc/apache-storm-0.10.0/lib/log4j-core-2.1.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks-enc/apache-storm-0.10.0/lib/log4j-over-slf4j-1.6.6.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks-enc/apache-storm-0.10.0/lib/log4j-slf4j-impl-2.1.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks-enc/apache-storm-0.10.0/lib/minlog-1.2.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks-enc/apache-storm-0.10.0/lib/reflectasm-1.07-shaded.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks-enc/apache-storm-0.10.0/lib/servlet-api-2.5.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks-enc/apache-storm-0.10.0/lib/slf4j-api-1.7.7.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks-enc/apache-storm-0.10.0/lib/storm-core-0.10.0.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks-enc/apache-storm-0.10.0:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks-enc/apache-storm-0.10.0/conf
+2016-12-01 23:32:07.548 o.a.s.s.o.a.z.s.ZooKeeperServer [INFO] Server environment:java.library.path=/usr/local/lib:/opt/local/lib:/usr/lib
+2016-12-01 23:32:07.548 o.a.s.s.o.a.z.s.ZooKeeperServer [INFO] Server environment:java.io.tmpdir=/var/folders/n2/0qh2lk9s3h1ft0qlqt07ddxc0000gn/T/
+2016-12-01 23:32:07.548 o.a.s.s.o.a.z.s.ZooKeeperServer [INFO] Server environment:java.compiler=<NA>
+2016-12-01 23:32:07.548 o.a.s.s.o.a.z.s.ZooKeeperServer [INFO] Server environment:os.name=Mac OS X
+2016-12-01 23:32:07.548 o.a.s.s.o.a.z.s.ZooKeeperServer [INFO] Server environment:os.arch=x86_64
+2016-12-01 23:32:07.548 o.a.s.s.o.a.z.s.ZooKeeperServer [INFO] Server environment:os.version=10.12.1
+2016-12-01 23:32:07.549 o.a.s.s.o.a.z.s.ZooKeeperServer [INFO] Server environment:user.name=Jiho
+2016-12-01 23:32:07.549 o.a.s.s.o.a.z.s.ZooKeeperServer [INFO] Server environment:user.home=/Users/Jiho
+2016-12-01 23:32:07.549 o.a.s.s.o.a.z.s.ZooKeeperServer [INFO] Server environment:user.dir=/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks-enc
+2016-12-01 23:32:07.705 b.s.u.Utils [INFO] Using defaults.yaml from resources
+2016-12-01 23:32:07.714 b.s.u.Utils [INFO] Using storm.yaml from resources
+2016-12-01 23:32:07.743 b.s.u.Utils [INFO] Using defaults.yaml from resources
+2016-12-01 23:32:07.749 b.s.u.Utils [INFO] Using storm.yaml from resources
+2016-12-01 23:32:07.801 o.a.s.s.o.e.j.s.Server [INFO] jetty-7.x.y-SNAPSHOT
+2016-12-01 23:32:07.823 o.a.s.s.o.e.j.s.h.ContextHandler [INFO] started o.a.s.s.o.e.j.s.ServletContextHandler{/,null}
+2016-12-01 23:32:07.848 o.a.s.s.o.e.j.s.AbstractConnector [INFO] Started SelectChannelConnector@0.0.0.0:8000
+2016-12-02 01:05:08.853 b.s.u.Utils [INFO] Using defaults.yaml from resources
+2016-12-02 01:05:08.902 b.s.u.Utils [INFO] Using storm.yaml from resources
+2016-12-02 01:05:09.869 o.a.s.s.o.a.z.ZooKeeper [INFO] Client environment:zookeeper.version=3.4.6-1569965, built on 02/20/2014 09:09 GMT
+2016-12-02 01:05:09.869 o.a.s.s.o.a.z.ZooKeeper [INFO] Client environment:host.name=pal-nat186-83-147.itap.purdue.edu
+2016-12-02 01:05:09.869 o.a.s.s.o.a.z.ZooKeeper [INFO] Client environment:java.version=1.8.0_60
+2016-12-02 01:05:09.869 o.a.s.s.o.a.z.ZooKeeper [INFO] Client environment:java.vendor=Oracle Corporation
+2016-12-02 01:05:09.869 o.a.s.s.o.a.z.ZooKeeper [INFO] Client environment:java.home=/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre
+2016-12-02 01:05:09.869 o.a.s.s.o.a.z.ZooKeeper [INFO] Client environment:java.class.path=/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks-enc/apache-storm-0.10.0/lib/asm-4.0.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks-enc/apache-storm-0.10.0/lib/clojure-1.6.0.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks-enc/apache-storm-0.10.0/lib/disruptor-2.10.4.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks-enc/apache-storm-0.10.0/lib/hadoop-auth-2.4.0.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks-enc/apache-storm-0.10.0/lib/kryo-2.21.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks-enc/apache-storm-0.10.0/lib/log4j-api-2.1.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks-enc/apache-storm-0.10.0/lib/log4j-core-2.1.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks-enc/apache-storm-0.10.0/lib/log4j-over-slf4j-1.6.6.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks-enc/apache-storm-0.10.0/lib/log4j-slf4j-impl-2.1.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks-enc/apache-storm-0.10.0/lib/minlog-1.2.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks-enc/apache-storm-0.10.0/lib/reflectasm-1.07-shaded.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks-enc/apache-storm-0.10.0/lib/servlet-api-2.5.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks-enc/apache-storm-0.10.0/lib/slf4j-api-1.7.7.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks-enc/apache-storm-0.10.0/lib/storm-core-0.10.0.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks-enc/apache-storm-0.10.0:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks-enc/apache-storm-0.10.0/conf
+2016-12-02 01:05:09.870 o.a.s.s.o.a.z.ZooKeeper [INFO] Client environment:java.library.path=/usr/local/lib:/opt/local/lib:/usr/lib
+2016-12-02 01:05:09.870 o.a.s.s.o.a.z.ZooKeeper [INFO] Client environment:java.io.tmpdir=/var/folders/n2/0qh2lk9s3h1ft0qlqt07ddxc0000gn/T/
+2016-12-02 01:05:09.870 o.a.s.s.o.a.z.ZooKeeper [INFO] Client environment:java.compiler=<NA>
+2016-12-02 01:05:09.870 o.a.s.s.o.a.z.ZooKeeper [INFO] Client environment:os.name=Mac OS X
+2016-12-02 01:05:09.870 o.a.s.s.o.a.z.ZooKeeper [INFO] Client environment:os.arch=x86_64
+2016-12-02 01:05:09.870 o.a.s.s.o.a.z.ZooKeeper [INFO] Client environment:os.version=10.12.1
+2016-12-02 01:05:09.870 o.a.s.s.o.a.z.ZooKeeper [INFO] Client environment:user.name=Jiho
+2016-12-02 01:05:09.870 o.a.s.s.o.a.z.ZooKeeper [INFO] Client environment:user.home=/Users/Jiho
+2016-12-02 01:05:09.870 o.a.s.s.o.a.z.ZooKeeper [INFO] Client environment:user.dir=/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks-enc
+2016-12-02 01:05:09.876 o.a.s.s.o.a.z.s.ZooKeeperServer [INFO] Server environment:zookeeper.version=3.4.6-1569965, built on 02/20/2014 09:09 GMT
+2016-12-02 01:05:09.878 o.a.s.s.o.a.z.s.ZooKeeperServer [INFO] Server environment:host.name=pal-nat186-83-147.itap.purdue.edu
+2016-12-02 01:05:09.879 o.a.s.s.o.a.z.s.ZooKeeperServer [INFO] Server environment:java.version=1.8.0_60
+2016-12-02 01:05:09.879 o.a.s.s.o.a.z.s.ZooKeeperServer [INFO] Server environment:java.vendor=Oracle Corporation
+2016-12-02 01:05:09.879 o.a.s.s.o.a.z.s.ZooKeeperServer [INFO] Server environment:java.home=/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre
+2016-12-02 01:05:09.879 o.a.s.s.o.a.z.s.ZooKeeperServer [INFO] Server environment:java.class.path=/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks-enc/apache-storm-0.10.0/lib/asm-4.0.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks-enc/apache-storm-0.10.0/lib/clojure-1.6.0.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks-enc/apache-storm-0.10.0/lib/disruptor-2.10.4.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks-enc/apache-storm-0.10.0/lib/hadoop-auth-2.4.0.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks-enc/apache-storm-0.10.0/lib/kryo-2.21.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks-enc/apache-storm-0.10.0/lib/log4j-api-2.1.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks-enc/apache-storm-0.10.0/lib/log4j-core-2.1.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks-enc/apache-storm-0.10.0/lib/log4j-over-slf4j-1.6.6.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks-enc/apache-storm-0.10.0/lib/log4j-slf4j-impl-2.1.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks-enc/apache-storm-0.10.0/lib/minlog-1.2.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks-enc/apache-storm-0.10.0/lib/reflectasm-1.07-shaded.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks-enc/apache-storm-0.10.0/lib/servlet-api-2.5.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks-enc/apache-storm-0.10.0/lib/slf4j-api-1.7.7.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks-enc/apache-storm-0.10.0/lib/storm-core-0.10.0.jar:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks-enc/apache-storm-0.10.0:/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks-enc/apache-storm-0.10.0/conf
+2016-12-02 01:05:09.879 o.a.s.s.o.a.z.s.ZooKeeperServer [INFO] Server environment:java.library.path=/usr/local/lib:/opt/local/lib:/usr/lib
+2016-12-02 01:05:09.879 o.a.s.s.o.a.z.s.ZooKeeperServer [INFO] Server environment:java.io.tmpdir=/var/folders/n2/0qh2lk9s3h1ft0qlqt07ddxc0000gn/T/
+2016-12-02 01:05:09.879 o.a.s.s.o.a.z.s.ZooKeeperServer [INFO] Server environment:java.compiler=<NA>
+2016-12-02 01:05:09.879 o.a.s.s.o.a.z.s.ZooKeeperServer [INFO] Server environment:os.name=Mac OS X
+2016-12-02 01:05:09.879 o.a.s.s.o.a.z.s.ZooKeeperServer [INFO] Server environment:os.arch=x86_64
+2016-12-02 01:05:09.879 o.a.s.s.o.a.z.s.ZooKeeperServer [INFO] Server environment:os.version=10.12.1
+2016-12-02 01:05:09.879 o.a.s.s.o.a.z.s.ZooKeeperServer [INFO] Server environment:user.name=Jiho
+2016-12-02 01:05:09.880 o.a.s.s.o.a.z.s.ZooKeeperServer [INFO] Server environment:user.home=/Users/Jiho
+2016-12-02 01:05:09.880 o.a.s.s.o.a.z.s.ZooKeeperServer [INFO] Server environment:user.dir=/Users/Jiho/Desktop/enc-streaming-benchmarks/streaming-benchmarks-enc
+2016-12-02 01:05:10.028 b.s.u.Utils [INFO] Using defaults.yaml from resources
+2016-12-02 01:05:10.035 b.s.u.Utils [INFO] Using storm.yaml from resources
+2016-12-02 01:05:10.058 b.s.u.Utils [INFO] Using defaults.yaml from resources
+2016-12-02 01:05:10.064 b.s.u.Utils [INFO] Using storm.yaml from resources
+2016-12-02 01:05:10.113 o.a.s.s.o.e.j.s.Server [INFO] jetty-7.x.y-SNAPSHOT
+2016-12-02 01:05:10.135 o.a.s.s.o.e.j.s.h.ContextHandler [INFO] started o.a.s.s.o.e.j.s.ServletContextHandler{/,null}
+2016-12-02 01:05:10.161 o.a.s.s.o.e.j.s.AbstractConnector [INFO] Started SelectChannelConnector@0.0.0.0:8000
